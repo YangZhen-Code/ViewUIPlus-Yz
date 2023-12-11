@@ -2,34 +2,7 @@
 
 .@{tree-prefix-cls} {
     position: relative;
-    ul{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        font-size: @font-size-base;
-        &.@{dropdown-prefix-cls}-menu{
-            padding: 0;
-        }
-        li{
-            list-style: none;
-            margin: 8px 0;
-            padding: 0;
-            white-space: nowrap;
-            outline: none;
 
-            &.@{dropdown-item-prefix-cls}{
-                margin: 0;
-                padding: 7px 16px;
-                white-space: nowrap;
-            }
-        }
-    }
-    li{
-        ul{
-            margin: 0;
-            padding: 0 0 0 18px;
-        }
-    }
     &-title {
         display: inline-block;
         margin: 0;
@@ -39,51 +12,81 @@
         vertical-align: top;
         color: @text-color;
         transition: all @transition-time @ease-in-out;
-        &:hover {
-            background-color: tint(@primary-color, 90%);
-        }
-        &-selected, &-selected:hover{
-            background-color: tint(@primary-color, 80%);
+
+        &-selected,
+        &-selected:hover {
+            color: @primary-color;
         }
     }
-    &-arrow{
+
+    &-arrow {
         cursor: pointer;
-        width: 12px;
+        width: 20px;
         text-align: center;
         display: inline-block;
+
         i {
             transition: all @transition-time @ease-in-out;
             font-size: @font-size-base;
             vertical-align: middle;
+            font-size: 20px;
         }
-        &-open{
+
+        &-open {
             i {
                 transform: rotate(90deg);
             }
         }
+
         //&-hidden{
         //    cursor: auto;
         //    i{
         //        display: none;
         //    }
         //}
-        &-disabled{
+        &-disabled {
             //cursor: @cursor-disabled;
         }
     }
 
-    .@{checkbox-prefix-cls}-wrapper{
+    .@{checkbox-prefix-cls}-wrapper {
         margin-right: 4px;
         margin-left: 4px;
     }
 
-    &-context-menu{
+    &-context-menu {
         position: absolute;
     }
 
-    &-empty{
+    &-empty {
         text-align: center;
         color: @btn-disable-color;
         padding: 5px 0;
     }
 }
+
+// 树组件
+@max-Tree-level: 8; //最大层级
+@tree-pl: 20; //padding-left距离
+@tree-body-pl: 5; //tree body 的padding距离
+
+.ivu-tree {
+    padding: 0 !important;
+
+    .ivu-cell {
+        padding: 7px unit(@tree-body-pl, px);
+    }
+}
+
+
+.treeLevelFor(@i) when (@i > 0) {
+
+    //循环遍历
+    .ivu-tree .@{tree-prefix-cls}-level@{i} {
+        padding-left: unit(@i * @tree-pl+@tree-body-pl, px);
+    }
+
+    .treeLevelFor(@i - 1);
+}
+
+.treeLevelFor(@max-Tree-level);
