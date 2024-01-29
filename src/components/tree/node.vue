@@ -7,8 +7,9 @@
             }"
             @contextmenu.stop="handleContextmenu(data, $event)"
             @selectstart.stop="handlePreventSelect(data, $event)"
+            @click="handleClickNode"
         >
-            <span :class="arrowClasses" @click="handleExpand">
+            <span :class="arrowClasses" @click.stop="handleExpand">
                 <Icon
                     v-if="showArrow"
                     :type="arrowType"
@@ -28,7 +29,7 @@
                 :disabled="data.disabled || data.disableCheckbox"
                 @click.prevent="handleCheck"
             ></Checkbox>
-            <span :class="titleClasses" @click="handleClickNode">
+            <span :class="titleClasses">
                 <Render
                     v-if="data.render"
                     :render="data.render"
@@ -244,7 +245,11 @@ export default {
         },
         handleClickNode() {
             if (this.TreeInstance.expandNode) {
-                if (this.showArrow) this.handleExpand();
+                if (this.showArrow) {
+                    this.handleExpand();
+                } else {
+                    this.handleSelect();
+                }
             } else if (this.TreeInstance.selectNode) {
                 this.handleSelect();
             }

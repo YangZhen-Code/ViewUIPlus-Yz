@@ -19,6 +19,7 @@
             :check-strictly="checkStrictly"
             :show-checkbox="multiple && showCheckbox"
             check-directly
+            :expandNode="expandNode"
             :load-data="loadData"
         ></Tree>
     </Select>
@@ -56,6 +57,10 @@ export default {
             type: Function,
         },
         checkStrictly: {
+            type: Boolean,
+            default: false,
+        },
+        expandNode: {
             type: Boolean,
             default: false,
         },
