@@ -89,7 +89,7 @@
             return {
                 social: ['facebook', 'github'],
                 fruit: ['苹果'],
-                tags: [],
+                tags: '',
                 testValue1: null,
                 testValue2: null,
                 indeterminate: true,

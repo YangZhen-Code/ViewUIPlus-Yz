@@ -1,10 +1,10 @@
 <template>
     <TreeSelect
         v-model="value"
-        multiple
-        showCheckbox
+        :normalizer="normalizer"
         :data="data"
         v-width="200"
+        expandNode
         @on-change="handleChange"
     />
 </template>
@@ -15,49 +15,50 @@ export default {
             value: "",
             data: [
                 {
-                    title: "测试1",
-                    expand: true,
-                    value: "parent1",
-                    selected: false,
-                    checked: false,
+                    id: '-1',
+                    label:'无父级'
+                },
+                {
+                    label: "测试1",
+                    id: "parent1",
                     children: [
                         {
-                            title: "测试 1-1",
+                            label: "测试 1-1",
                             expand: true,
-                            value: "parent1-1",
+                            id: "parent1-1",
                             selected: false,
                             checked: false,
                             children: [
                                 {
-                                    title: "测试 1-1-1",
-                                    value: "leaf1",
+                                    label: "测试 1-1-1",
+                                    id: "leaf1",
                                     selected: false,
                                     checked: false,
                                 },
                                 {
-                                    title: "测试 1-1-2",
-                                    value: "leaf2",
+                                    label: "测试 1-1-2",
+                                    id: "leaf2",
                                     selected: false,
                                     checked: false,
                                 },
                             ],
                         },
                         {
-                            title: "测试 1-2",
+                            label: "测试 1-2",
                             expand: true,
-                            value: "leaf 1-2",
+                            id: "leaf 1-2",
                             selected: false,
                             checked: false,
                             children: [
                                 {
-                                    title: "测试 1-2-1",
-                                    value: "leaf3",
+                                    label: "测试 1-2-1",
+                                    id: "leaf3",
                                     selected: false,
                                     checked: false,
                                 },
                                 {
-                                    title: "测试 1-2-1",
-                                    value: "leaf4",
+                                    label: "测试 1-2-1",
+                                    id: "leaf4",
                                     selected: false,
                                     checked: false,
                                 },
@@ -69,6 +70,12 @@ export default {
         };
     },
     methods: {
+        normalizer(node) {
+            return {
+                title: node.label?node.label:'无父级',
+                value: node.id?node.id:'-1',
+            };
+        },
         handleChange(val) {
             console.log(val);
         },

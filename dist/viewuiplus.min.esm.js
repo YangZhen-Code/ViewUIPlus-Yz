@@ -3108,7 +3108,7 @@ const _hoisted_1$1j = {
   key: 1,
   class: "ivu-tag ivu-tag-checked"
 };
-const _hoisted_2$P = { class: "ivu-tag-text ivu-select-max-tag" };
+const _hoisted_2$Q = { class: "ivu-tag-text ivu-select-max-tag" };
 const _hoisted_3$B = ["id", "disabled", "placeholder"];
 function _sfc_render$28(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Icon = resolveComponent("Icon");
@@ -3143,7 +3143,7 @@ function _sfc_render$28(_ctx, _cache, $props, $setup, $data, $options) {
       ]);
     }), 128)),
     $props.maxTagCount !== void 0 && $props.values.length > $props.maxTagCount ? (openBlock(), createElementBlock("div", _hoisted_1$1j, [
-      createElementVNode("span", _hoisted_2$P, [
+      createElementVNode("span", _hoisted_2$Q, [
         $props.maxTagPlaceholder ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
           createTextVNode(toDisplayString($props.maxTagPlaceholder($props.values.length - $props.maxTagCount)), 1)
         ], 64)) : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
@@ -4009,7 +4009,7 @@ const _sfc_main$2n = {
   }
 };
 const _hoisted_1$1i = ["tabindex"];
-const _hoisted_2$O = ["name", "value"];
+const _hoisted_2$P = ["name", "value"];
 function _sfc_render$27(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_select_head = resolveComponent("select-head");
   const _component_Icon = resolveComponent("Icon");
@@ -4041,7 +4041,7 @@ function _sfc_render$27(_ctx, _cache, $props, $setup, $data, $options) {
           type: "hidden",
           name: $props.name,
           value: $options.publicValue
-        }, null, 8, _hoisted_2$O),
+        }, null, 8, _hoisted_2$P),
         createVNode(_component_select_head, {
           ref: "selectHead",
           filterable: $props.filterable,
@@ -4784,7 +4784,7 @@ const _hoisted_1$1h = {
   key: 4,
   class: "ivu-input-suffix"
 };
-const _hoisted_2$N = {
+const _hoisted_2$O = {
   key: 5,
   class: "ivu-input-word-count"
 };
@@ -4843,7 +4843,7 @@ function _sfc_render$25(_ctx, _cache, $props, $setup, $data, $options) {
             class: normalizeClass(["ivu-icon", ["ivu-icon-" + $props.suffix]])
           }, null, 2)) : createCommentVNode("", true)
         ])
-      ])) : $props.showWordLimit ? (openBlock(), createElementBlock("span", _hoisted_2$N, toDisplayString($options.textLength) + "/" + toDisplayString($options.upperLimit), 1)) : $props.password ? (openBlock(), createElementBlock("span", {
+      ])) : $props.showWordLimit ? (openBlock(), createElementBlock("span", _hoisted_2$O, toDisplayString($options.textLength) + "/" + toDisplayString($options.upperLimit), 1)) : $props.password ? (openBlock(), createElementBlock("span", {
         key: 6,
         class: "ivu-input-suffix",
         onClick: _cache[3] || (_cache[3] = (...args) => $options.handleToggleShowPassword && $options.handleToggleShowPassword(...args))
@@ -5641,7 +5641,7 @@ const _hoisted_1$1f = {
   key: 0,
   class: "ivu-avatar-list-item ivu-avatar-list-item-excess"
 };
-const _hoisted_2$M = {
+const _hoisted_2$N = {
   key: 1,
   class: "ivu-avatar-list-item ivu-avatar-list-item-excess"
 };
@@ -5688,7 +5688,7 @@ function _sfc_render$21(_ctx, _cache, $props, $setup, $data, $options) {
         ]),
         _: 3
       }, 8, ["size", "shape", "style"])
-    ])) : $props.list.length > $props.max ? (openBlock(), createElementBlock("div", _hoisted_2$M, [
+    ])) : $props.list.length > $props.max ? (openBlock(), createElementBlock("div", _hoisted_2$N, [
       createVNode(_component_Avatar, {
         size: $props.size,
         shape: $props.shape,
@@ -5775,7 +5775,7 @@ const _sfc_main$2g = {
   }
 };
 const _hoisted_1$1e = /* @__PURE__ */ createElementVNode("i", { class: "ivu-icon ivu-icon-ios-arrow-up" }, null, -1);
-const _hoisted_2$L = [
+const _hoisted_2$M = [
   _hoisted_1$1e
 ];
 function _sfc_render$20(_ctx, _cache, $props, $setup, $data, $options) {
@@ -5787,7 +5787,7 @@ function _sfc_render$20(_ctx, _cache, $props, $setup, $data, $options) {
     renderSlot(_ctx.$slots, "default", {}, () => [
       createElementVNode("div", {
         class: normalizeClass($options.innerClasses)
-      }, _hoisted_2$L, 2)
+      }, _hoisted_2$M, 2)
     ])
   ], 6);
 }
@@ -6015,7 +6015,7 @@ const _sfc_main$2d = {
   }
 };
 const _hoisted_1$1b = ["href", "target"];
-const _hoisted_2$K = ["innerHTML"];
+const _hoisted_2$L = ["innerHTML"];
 function _sfc_render$1Z(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("span", null, [
     _ctx.to ? (openBlock(), createElementBlock("a", {
@@ -6040,7 +6040,7 @@ function _sfc_render$1Z(_ctx, _cache, $props, $setup, $data, $options) {
       key: 2,
       class: normalizeClass($options.separatorClasses),
       innerHTML: $options.separator
-    }, null, 10, _hoisted_2$K)) : (openBlock(), createElementBlock("span", {
+    }, null, 10, _hoisted_2$L)) : (openBlock(), createElementBlock("span", {
       key: 3,
       class: normalizeClass($options.separatorClasses)
     }, [
@@ -6906,7 +6906,7 @@ const _hoisted_1$18 = {
   cellspacing: "0",
   cellpadding: "0"
 };
-const _hoisted_2$J = ["onClick", "onContextmenu"];
+const _hoisted_2$K = ["onClick", "onContextmenu"];
 const _hoisted_3$z = ["onClick"];
 const _hoisted_4$s = { class: "ivu-calendar-table-day-title" };
 const _hoisted_5$k = { class: "ivu-calendar-table-day-slot" };
@@ -6939,7 +6939,7 @@ function _sfc_render$1V(_ctx, _cache, $props, $setup, $data, $options) {
                   })
                 ])
               ], 14, _hoisted_3$z)
-            ], 40, _hoisted_2$J);
+            ], 40, _hoisted_2$K);
           }), 128))
         ]);
       }), 128))
@@ -6952,7 +6952,11 @@ const _sfc_main$27 = {
   mixins: [events],
   inject: ["CalendarInstance"],
   props: {
-    date: Object
+    date: Object,
+    multiple: {
+      type: Boolean,
+      default: false
+    }
   },
   data() {
     return {};
@@ -6987,6 +6991,13 @@ const _sfc_main$27 = {
   },
   methods: {
     handleClickDate(date3) {
+      let selectList = this.CalendarInstance.selectList;
+      if (selectList.includes(date3)) {
+        let index2 = selectList.findIndex((e) => e === date3);
+        selectList.splice(index2, 1);
+      } else {
+        this.CalendarInstance.selectList.push(date3);
+      }
       this.CalendarInstance.handleChangeDate(dayjs(date3));
     }
   }
@@ -6996,7 +7007,7 @@ const _hoisted_1$17 = {
   cellspacing: "0",
   cellpadding: "0"
 };
-const _hoisted_2$I = ["onClick", "onContextmenu"];
+const _hoisted_2$J = ["onClick", "onContextmenu"];
 const _hoisted_3$y = ["onClick"];
 const _hoisted_4$r = { class: "ivu-calendar-table-day-title" };
 const _hoisted_5$j = { class: "ivu-calendar-table-day-slot" };
@@ -7012,7 +7023,9 @@ function _sfc_render$1U(_ctx, _cache, $props, $setup, $data, $options) {
               onContextmenu: withModifiers(($event) => _ctx.handleCellContextmenu(month), ["prevent"])
             }, [
               createElementVNode("div", {
-                class: normalizeClass(["ivu-calendar-table-day", { "ivu-calendar-table-day-current": month.text === $options.currentMonth }]),
+                class: normalizeClass(["ivu-calendar-table-day", {
+                  "ivu-calendar-table-day-current": $props.multiple ? $options.CalendarInstance.selectList.includes(month.text) : month.text === $options.currentMonth
+                }]),
                 style: normalizeStyle($options.dayStyles),
                 onClick: ($event) => $options.handleClickDate(month.text)
               }, [
@@ -7020,11 +7033,15 @@ function _sfc_render$1U(_ctx, _cache, $props, $setup, $data, $options) {
                 createElementVNode("div", _hoisted_5$j, [
                   renderSlot(_ctx.$slots, "year", {
                     month: new Date(month.month),
-                    data: { type: month.type + "-year", month: month.text, selected: month.text === $options.currentMonth }
+                    data: {
+                      type: month.type + "-year",
+                      month: month.text,
+                      selected: month.text === $options.currentMonth
+                    }
                   })
                 ])
               ], 14, _hoisted_3$y)
-            ], 40, _hoisted_2$I);
+            ], 40, _hoisted_2$J);
           }), 128))
         ]);
       }), 128))
@@ -7034,8 +7051,25 @@ function _sfc_render$1U(_ctx, _cache, $props, $setup, $data, $options) {
 var CalendarYear = /* @__PURE__ */ _export_sfc(_sfc_main$27, [["render", _sfc_render$1U]]);
 const _sfc_main$26 = {
   name: "Calendar",
-  components: { CalendarMonth, CalendarYear, ButtonGroup, Button: _sfc_main$2c, RadioGroup, Radio, Icon },
-  emits: ["on-type-change", "on-prev", "on-next", "on-today", "on-change", "update:modelValue", "on-cell-click", "on-cell-contextmenu"],
+  components: {
+    CalendarMonth,
+    CalendarYear,
+    ButtonGroup,
+    Button: _sfc_main$2c,
+    RadioGroup,
+    Radio,
+    Icon
+  },
+  emits: [
+    "on-type-change",
+    "on-prev",
+    "on-next",
+    "on-today",
+    "on-change",
+    "update:modelValue",
+    "on-cell-click",
+    "on-cell-contextmenu"
+  ],
   provide() {
     return {
       CalendarInstance: this
@@ -7085,16 +7119,34 @@ const _sfc_main$26 = {
             year: "\u5E74"
           },
           weekDays: ["\u65E5", "\u4E00", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D"],
-          months: ["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"]
+          months: [
+            "1\u6708",
+            "2\u6708",
+            "3\u6708",
+            "4\u6708",
+            "5\u6708",
+            "6\u6708",
+            "7\u6708",
+            "8\u6708",
+            "9\u6708",
+            "10\u6708",
+            "11\u6708",
+            "12\u6708"
+          ]
         };
       }
+    },
+    multiple: {
+      type: Boolean,
+      default: false
     }
   },
   data() {
     const value = this.modelValue ? this.modelValue : new Date();
     return {
       currentValue: dayjs(value),
-      mode: this.type
+      mode: this.type,
+      selectList: []
     };
   },
   watch: {
@@ -7151,15 +7203,19 @@ const _sfc_main$26 = {
       this.$emit("on-today");
     },
     handleChangeDate(val) {
-      this.currentValue = val;
-      const date3 = new Date(val.format("YYYY-MM-DD"));
-      this.$emit("update:modelValue", date3);
-      this.$emit("on-change", date3);
+      if (this.multiple) {
+        this.$emit("on-select", this.selectList);
+      } else {
+        this.currentValue = val;
+        const date3 = new Date(val.format("YYYY-MM-DD"));
+        this.$emit("update:modelValue", date3);
+        this.$emit("on-change", date3);
+      }
     }
   }
 };
 const _hoisted_1$16 = { class: "ivu-calendar" };
-const _hoisted_2$H = {
+const _hoisted_2$I = {
   key: 0,
   class: "ivu-calendar-header"
 };
@@ -7175,7 +7231,7 @@ function _sfc_render$1T(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_CalendarMonth = resolveComponent("CalendarMonth");
   const _component_CalendarYear = resolveComponent("CalendarYear");
   return openBlock(), createElementBlock("div", _hoisted_1$16, [
-    $props.showHeader ? (openBlock(), createElementBlock("div", _hoisted_2$H, [
+    $props.showHeader ? (openBlock(), createElementBlock("div", _hoisted_2$I, [
       renderSlot(_ctx.$slots, "header", {}, () => [
         createElementVNode("div", _hoisted_3$x, [
           renderSlot(_ctx.$slots, "headerTitle", {}, () => [
@@ -7249,7 +7305,8 @@ function _sfc_render$1T(_ctx, _cache, $props, $setup, $data, $options) {
         _: 3
       }, 8, ["date"])) : $data.mode === "year" ? (openBlock(), createBlock(_component_CalendarYear, {
         key: 1,
-        date: $data.currentValue
+        date: $data.currentValue,
+        multiple: $props.multiple
       }, {
         year: withCtx(({ month, data }) => [
           renderSlot(_ctx.$slots, "year", {
@@ -7258,7 +7315,7 @@ function _sfc_render$1T(_ctx, _cache, $props, $setup, $data, $options) {
           })
         ]),
         _: 3
-      }, 8, ["date"])) : createCommentVNode("", true)
+      }, 8, ["date", "multiple"])) : createCommentVNode("", true)
     ])
   ]);
 }
@@ -10156,7 +10213,7 @@ const _sfc_main$1Y = {
   }
 };
 const _hoisted_1$11 = ["name", "value"];
-const _hoisted_2$G = ["onClick", "innerHTML"];
+const _hoisted_2$H = ["onClick", "innerHTML"];
 function _sfc_render$1K(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_i_input = resolveComponent("i-input");
   const _component_Icon = resolveComponent("Icon");
@@ -10242,7 +10299,7 @@ function _sfc_render$1K(_ctx, _cache, $props, $setup, $data, $options) {
                   key: index2,
                   onClick: ($event) => $options.handleSelectItem(index2),
                   innerHTML: item.display
-                }, null, 10, _hoisted_2$G);
+                }, null, 10, _hoisted_2$H);
               }), 128))
             ], 2)
           ], 2), [
@@ -10282,7 +10339,7 @@ const _sfc_main$1X = {
   }
 };
 const _hoisted_1$10 = { class: "ivu-cell-item" };
-const _hoisted_2$F = { class: "ivu-cell-icon" };
+const _hoisted_2$G = { class: "ivu-cell-icon" };
 const _hoisted_3$w = { class: "ivu-cell-main" };
 const _hoisted_4$p = { class: "ivu-cell-title" };
 const _hoisted_5$h = { class: "ivu-cell-label" };
@@ -10290,7 +10347,7 @@ const _hoisted_6$9 = { class: "ivu-cell-footer" };
 const _hoisted_7$7 = { class: "ivu-cell-extra" };
 function _sfc_render$1J(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", _hoisted_1$10, [
-    createElementVNode("div", _hoisted_2$F, [
+    createElementVNode("div", _hoisted_2$G, [
       renderSlot(_ctx.$slots, "icon")
     ]),
     createElementVNode("div", _hoisted_3$w, [
@@ -10403,7 +10460,7 @@ const _sfc_main$1W = {
   }
 };
 const _hoisted_1$$ = ["href", "target"];
-const _hoisted_2$E = {
+const _hoisted_2$F = {
   key: 2,
   class: "ivu-cell-arrow"
 };
@@ -10468,7 +10525,7 @@ function _sfc_render$1I(_ctx, _cache, $props, $setup, $data, $options) {
         _: 3
       }, 8, ["title", "label", "extra"])
     ])),
-    _ctx.to ? (openBlock(), createElementBlock("div", _hoisted_2$E, [
+    _ctx.to ? (openBlock(), createElementBlock("div", _hoisted_2$F, [
       renderSlot(_ctx.$slots, "arrow", {}, () => [
         createVNode(_component_Icon, {
           type: $options.arrowType,
@@ -10647,7 +10704,7 @@ const _sfc_main$1U = {
   }
 };
 const _hoisted_1$Z = ["disabled", "value", "name"];
-const _hoisted_2$D = ["disabled", "checked", "name"];
+const _hoisted_2$E = ["disabled", "checked", "name"];
 const _hoisted_3$v = {
   key: 0,
   class: "ivu-checkbox-label-text"
@@ -10685,7 +10742,7 @@ function _sfc_render$1G(_ctx, _cache, $props, $setup, $data, $options) {
         onChange: _cache[4] || (_cache[4] = (...args) => $options.change && $options.change(...args)),
         onFocus: _cache[5] || (_cache[5] = (...args) => $options.onFocus && $options.onFocus(...args)),
         onBlur: _cache[6] || (_cache[6] = (...args) => $options.onBlur && $options.onBlur(...args))
-      }, null, 42, _hoisted_2$D))
+      }, null, 42, _hoisted_2$E))
     ], 2),
     $data.showSlot ? (openBlock(), createElementBlock("span", _hoisted_3$v, [
       renderSlot(_ctx.$slots, "default", {}, () => [
@@ -10873,7 +10930,7 @@ const _sfc_main$1S = {
   }
 };
 const _hoisted_1$Y = { viewBox: "0 0 100 100" };
-const _hoisted_2$C = { key: 0 };
+const _hoisted_2$D = { key: 0 };
 const _hoisted_3$u = ["id"];
 const _hoisted_4$o = ["stop-color"];
 const _hoisted_5$g = ["stop-color"];
@@ -10885,7 +10942,7 @@ function _sfc_render$1E(_ctx, _cache, $props, $setup, $data, $options) {
     class: normalizeClass($options.wrapClasses)
   }, [
     (openBlock(), createElementBlock("svg", _hoisted_1$Y, [
-      $options.showDefs ? (openBlock(), createElementBlock("defs", _hoisted_2$C, [
+      $options.showDefs ? (openBlock(), createElementBlock("defs", _hoisted_2$D, [
         createElementVNode("linearGradient", {
           id: $data.id,
           x1: "100%",
@@ -12138,7 +12195,7 @@ const _sfc_main$1O = {
   }
 };
 const _hoisted_1$W = ["name", "value"];
-const _hoisted_2$B = { class: "ivu-city-drop" };
+const _hoisted_2$C = { class: "ivu-city-drop" };
 const _hoisted_3$t = {
   key: 0,
   class: "ivu-city-drop-cities"
@@ -12195,7 +12252,7 @@ function _sfc_render$1A(_ctx, _cache, $props, $setup, $data, $options) {
           }, ["stop"]))
         }, {
           default: withCtx(() => [
-            createElementVNode("div", _hoisted_2$B, [
+            createElementVNode("div", _hoisted_2$C, [
               $props.cities.length ? (openBlock(), createElementBlock("div", _hoisted_3$t, [
                 (openBlock(true), createElementBlock(Fragment, null, renderList($options.relCities, (item) => {
                   return openBlock(), createElementBlock("span", {
@@ -13554,7 +13611,7 @@ const _sfc_main$1M = {
   }
 };
 const _hoisted_1$V = ["data-color-id"];
-const _hoisted_2$A = { key: 0 };
+const _hoisted_2$B = { key: 0 };
 function _sfc_render$1y(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", {
     ref: "reference",
@@ -13590,7 +13647,7 @@ function _sfc_render$1y(_ctx, _cache, $props, $setup, $data, $options) {
             }, null, 2)
           ], 8, _hoisted_1$V)
         ], 2),
-        $options.lineBreak($props.list, index2) ? (openBlock(), createElementBlock("br", _hoisted_2$A)) : createCommentVNode("", true)
+        $options.lineBreak($props.list, index2) ? (openBlock(), createElementBlock("br", _hoisted_2$B)) : createCommentVNode("", true)
       ], 64);
     }), 128))
   ], 544);
@@ -14320,7 +14377,7 @@ const _sfc_main$1I = {
   }
 };
 const _hoisted_1$U = ["name", "value"];
-const _hoisted_2$z = ["tabindex"];
+const _hoisted_2$A = ["tabindex"];
 function _sfc_render$1u(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Icon = resolveComponent("Icon");
   const _component_Saturation = resolveComponent("Saturation");
@@ -14379,7 +14436,7 @@ function _sfc_render$1u(_ctx, _cache, $props, $setup, $data, $options) {
             [vShow, $props.modelValue || $data.visible]
           ])
         ], 2)
-      ], 42, _hoisted_2$z)
+      ], 42, _hoisted_2$A)
     ], 2),
     createVNode(_component_Drop, {
       ref: "drop",
@@ -14717,9 +14774,9 @@ const _sfc_main$1G = {
   }
 };
 const _hoisted_1$T = ["innerHTML"];
-const _hoisted_2$y = /* @__PURE__ */ createElementVNode("i", { class: "ivu-icon ivu-icon-ios-close" }, null, -1);
+const _hoisted_2$z = /* @__PURE__ */ createElementVNode("i", { class: "ivu-icon ivu-icon-ios-close" }, null, -1);
 const _hoisted_3$s = [
-  _hoisted_2$y
+  _hoisted_2$z
 ];
 const _hoisted_4$m = ["innerHTML"];
 const _hoisted_5$e = /* @__PURE__ */ createElementVNode("i", { class: "ivu-icon ivu-icon-ios-close" }, null, -1);
@@ -16997,7 +17054,7 @@ const _sfc_main$1B = {
   }
 };
 const _hoisted_1$R = { class: "ivu-date-picker-cells-header" };
-const _hoisted_2$x = ["onClick", "onMouseenter"];
+const _hoisted_2$y = ["onClick", "onMouseenter"];
 function _sfc_render$1n(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", {
     class: normalizeClass($options.classes)
@@ -17015,7 +17072,7 @@ function _sfc_render$1n(_ctx, _cache, $props, $setup, $data, $options) {
         onMouseenter: ($event) => _ctx.handleMouseMove(cell)
       }, [
         createElementVNode("em", null, toDisplayString(cell.desc), 1)
-      ], 42, _hoisted_2$x);
+      ], 42, _hoisted_2$y);
     }), 128))
   ], 2);
 }
@@ -17418,7 +17475,7 @@ const _sfc_main$1y = {
   }
 };
 const _hoisted_1$O = ["onClick"];
-const _hoisted_2$w = ["onClick"];
+const _hoisted_2$x = ["onClick"];
 const _hoisted_3$r = ["onClick"];
 function _sfc_render$1k(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", {
@@ -17454,7 +17511,7 @@ function _sfc_render$1k(_ctx, _cache, $props, $setup, $data, $options) {
             class: normalizeClass($options.getCellCls(item)),
             key: item.text,
             onClick: ($event) => $options.handleClick("minutes", item)
-          }, toDisplayString($options.formatTime(item.text)), 11, _hoisted_2$w)), [
+          }, toDisplayString($options.formatTime(item.text)), 11, _hoisted_2$x)), [
             [vShow, !item.hide]
           ]);
         }), 128))
@@ -19254,7 +19311,7 @@ const _sfc_main$1o = {
   }
 };
 const _hoisted_1$K = { ref: "drawer" };
-const _hoisted_2$v = /* @__PURE__ */ createElementVNode("div", { class: "ivu-drawer-drag-move-trigger" }, [
+const _hoisted_2$w = /* @__PURE__ */ createElementVNode("div", { class: "ivu-drawer-drag-move-trigger" }, [
   /* @__PURE__ */ createElementVNode("div", { class: "ivu-drawer-drag-move-trigger-point" }, [
     /* @__PURE__ */ createElementVNode("i"),
     /* @__PURE__ */ createElementVNode("i"),
@@ -19329,7 +19386,7 @@ function _sfc_render$1b(_ctx, _cache, $props, $setup, $data, $options) {
                 onMousedown: _cache[2] || (_cache[2] = (...args) => $options.handleTriggerMousedown && $options.handleTriggerMousedown(...args))
               }, [
                 renderSlot(_ctx.$slots, "trigger", {}, () => [
-                  _hoisted_2$v
+                  _hoisted_2$w
                 ])
               ], 34)) : createCommentVNode("", true)
             ], 6), [
@@ -19566,7 +19623,7 @@ const _sfc_main$1m = {
   }
 };
 const _hoisted_1$J = { class: "ivu-ellipsis" };
-const _hoisted_2$u = {
+const _hoisted_2$v = {
   class: "ivu-ellipsis-more",
   ref: "more"
 };
@@ -19600,7 +19657,7 @@ function _sfc_render$19(_ctx, _cache, $props, $setup, $data, $options) {
             class: "ivu-ellipsis-text",
             ref: "text"
           }, toDisplayString($props.text), 513),
-          withDirectives(createElementVNode("span", _hoisted_2$u, [
+          withDirectives(createElementVNode("span", _hoisted_2$v, [
             renderSlot(_ctx.$slots, "more", {}, () => [
               createTextVNode("...")
             ])
@@ -19737,14 +19794,14 @@ const _sfc_main$1k = {
   }
 };
 const _hoisted_1$I = { class: "ivu-exception" };
-const _hoisted_2$t = { class: "ivu-exception-img" };
+const _hoisted_2$u = { class: "ivu-exception-img" };
 const _hoisted_3$p = { class: "ivu-exception-content" };
 const _hoisted_4$k = { class: "ivu-exception-content-desc" };
 const _hoisted_5$c = { class: "ivu-exception-content-actions" };
 function _sfc_render$18(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Button = resolveComponent("Button");
   return openBlock(), createElementBlock("div", _hoisted_1$I, [
-    createElementVNode("div", _hoisted_2$t, [
+    createElementVNode("div", _hoisted_2$u, [
       createElementVNode("div", {
         class: "ivu-exception-img-element",
         style: normalizeStyle({ "background-image": "url(" + $options.imgPath + ")" })
@@ -19805,14 +19862,14 @@ const _sfc_main$1i = {
   }
 };
 const _hoisted_1$H = { class: "ivu-footer-toolbar" };
-const _hoisted_2$s = {
+const _hoisted_2$t = {
   key: 0,
   class: "ivu-footer-toolbar-left"
 };
 const _hoisted_3$o = { class: "ivu-footer-toolbar-right" };
 function _sfc_render$16(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", _hoisted_1$H, [
-    $props.extra || _ctx.$slots.extra ? (openBlock(), createElementBlock("div", _hoisted_2$s, [
+    $props.extra || _ctx.$slots.extra ? (openBlock(), createElementBlock("div", _hoisted_2$t, [
       renderSlot(_ctx.$slots, "extra", {}, () => [
         createTextVNode(toDisplayString($props.extra), 1)
       ])
@@ -19978,7 +20035,7 @@ const _sfc_main$1g = {
   }
 };
 const _hoisted_1$F = { class: "ivu-global-footer" };
-const _hoisted_2$r = {
+const _hoisted_2$s = {
   key: 0,
   class: "ivu-global-footer-links"
 };
@@ -19990,7 +20047,7 @@ const _hoisted_4$j = {
 function _sfc_render$14(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Icon = resolveComponent("Icon");
   return openBlock(), createElementBlock("footer", _hoisted_1$F, [
-    $props.links.length || _ctx.$slots.links ? (openBlock(), createElementBlock("div", _hoisted_2$r, [
+    $props.links.length || _ctx.$slots.links ? (openBlock(), createElementBlock("div", _hoisted_2$s, [
       renderSlot(_ctx.$slots, "links", {}, () => [
         (openBlock(true), createElementBlock(Fragment, null, renderList($props.links, (item) => {
           return openBlock(), createElementBlock("a", {
@@ -22031,7 +22088,7 @@ const _hoisted_1$E = {
   key: 1,
   class: "ivu-image-preview-fail"
 };
-const _hoisted_2$q = ["src"];
+const _hoisted_2$r = ["src"];
 const _hoisted_3$m = /* @__PURE__ */ createElementVNode("path", {
   d: "M637 443H519V309c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v134H325c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h118v134c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V519h118c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z",
   "p-id": "7198",
@@ -22187,7 +22244,7 @@ function _sfc_render$$(_ctx, _cache, $props, $setup, $data, $options) {
               onMousedown: _cache[1] || (_cache[1] = withModifiers((...args) => $options.handleMousedown && $options.handleMousedown(...args), ["stop", "prevent"])),
               onLoad: _cache[2] || (_cache[2] = (...args) => $options.handleImageLoad && $options.handleImageLoad(...args)),
               onError: _cache[3] || (_cache[3] = (...args) => $options.handleImageError && $options.handleImageError(...args))
-            }, null, 46, _hoisted_2$q)),
+            }, null, 46, _hoisted_2$r)),
             $props.toolbar && $props.toolbar.length > 0 ? (openBlock(), createBlock(_component_Row, {
               key: 2,
               "class-name": "ivu-image-preview-operations",
@@ -22569,7 +22626,7 @@ const _hoisted_1$D = {
   key: 0,
   class: "ivu-image-placeholder"
 };
-const _hoisted_2$p = {
+const _hoisted_2$q = {
   key: 1,
   class: "ivu-image-error"
 };
@@ -22586,7 +22643,7 @@ function _sfc_render$_(_ctx, _cache, $props, $setup, $data, $options) {
       renderSlot(_ctx.$slots, "placeholder", {}, () => [
         createElementVNode("span", null, toDisplayString($options.loadingLang), 1)
       ])
-    ])) : $data.imageError ? (openBlock(), createElementBlock("div", _hoisted_2$p, [
+    ])) : $data.imageError ? (openBlock(), createElementBlock("div", _hoisted_2$q, [
       renderSlot(_ctx.$slots, "error", {}, () => [
         createElementVNode("span", null, toDisplayString($options.failLang), 1)
       ])
@@ -23003,7 +23060,7 @@ const _sfc_main$19 = {
   }
 };
 const _hoisted_1$C = /* @__PURE__ */ createElementVNode("i", { class: "ivu-icon ivu-icon-ios-remove" }, null, -1);
-const _hoisted_2$o = [
+const _hoisted_2$p = [
   _hoisted_1$C
 ];
 const _hoisted_3$k = /* @__PURE__ */ createElementVNode("i", { class: "ivu-icon ivu-icon-ios-add" }, null, -1);
@@ -23042,7 +23099,7 @@ function _sfc_render$Z(_ctx, _cache, $props, $setup, $data, $options) {
       key: 1,
       class: normalizeClass(["ivu-input-number-controls-outside-btn ivu-input-number-controls-outside-down", { "ivu-input-number-controls-outside-btn-disabled": $data.downDisabled }]),
       onClick: _cache[4] || (_cache[4] = (...args) => $options.down && $options.down(...args))
-    }, _hoisted_2$o, 2)) : createCommentVNode("", true),
+    }, _hoisted_2$p, 2)) : createCommentVNode("", true),
     $props.controlsOutside ? (openBlock(), createElementBlock("div", {
       key: 2,
       class: normalizeClass(["ivu-input-number-controls-outside-btn ivu-input-number-controls-outside-up", { "ivu-input-number-controls-outside-btn-disabled": $data.upDisabled }]),
@@ -23773,7 +23830,7 @@ const _hoisted_1$B = {
   key: 0,
   class: "ivu-list-header"
 };
-const _hoisted_2$n = { class: "ivu-list-container" };
+const _hoisted_2$o = { class: "ivu-list-container" };
 const _hoisted_3$j = { class: "ivu-list-items" };
 const _hoisted_4$f = {
   key: 2,
@@ -23789,7 +23846,7 @@ function _sfc_render$X(_ctx, _cache, $props, $setup, $data, $options) {
         createTextVNode(toDisplayString($props.header), 1)
       ])
     ])) : createCommentVNode("", true),
-    createElementVNode("div", _hoisted_2$n, [
+    createElementVNode("div", _hoisted_2$o, [
       createElementVNode("ul", _hoisted_3$j, [
         renderSlot(_ctx.$slots, "default")
       ])
@@ -23846,7 +23903,7 @@ const _sfc_main$14 = {
   }
 };
 const _hoisted_1$A = { class: "ivu-list-item-main" };
-const _hoisted_2$m = {
+const _hoisted_2$n = {
   key: 0,
   class: "ivu-list-item-action"
 };
@@ -23863,7 +23920,7 @@ function _sfc_render$W(_ctx, _cache, $props, $setup, $data, $options) {
     $options.itemLayout === "vertical" && _ctx.$slots.extra ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
       createElementVNode("div", _hoisted_1$A, [
         renderSlot(_ctx.$slots, "default"),
-        _ctx.$slots.action ? (openBlock(), createElementBlock("ul", _hoisted_2$m, [
+        _ctx.$slots.action ? (openBlock(), createElementBlock("ul", _hoisted_2$n, [
           renderSlot(_ctx.$slots, "action")
         ])) : createCommentVNode("", true)
       ]),
@@ -23901,7 +23958,7 @@ const _sfc_main$13 = {
   }
 };
 const _hoisted_1$z = { class: "ivu-list-item-meta" };
-const _hoisted_2$l = {
+const _hoisted_2$m = {
   key: 0,
   class: "ivu-list-item-meta-avatar"
 };
@@ -23917,7 +23974,7 @@ const _hoisted_5$8 = {
 function _sfc_render$V(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Avatar = resolveComponent("Avatar");
   return openBlock(), createElementBlock("div", _hoisted_1$z, [
-    $props.avatar || _ctx.$slots.avatar ? (openBlock(), createElementBlock("div", _hoisted_2$l, [
+    $props.avatar || _ctx.$slots.avatar ? (openBlock(), createElementBlock("div", _hoisted_2$m, [
       renderSlot(_ctx.$slots, "avatar", {}, () => [
         createVNode(_component_Avatar, { src: $props.avatar }, null, 8, ["src"])
       ])
@@ -26357,7 +26414,7 @@ const _hoisted_1$v = {
   class: "ivu-notifications",
   ref: "notice"
 };
-const _hoisted_2$k = { class: "ivu-notifications-tabs" };
+const _hoisted_2$l = { class: "ivu-notifications-tabs" };
 const _hoisted_3$g = {
   key: 0,
   class: "ivu-notifications-extra"
@@ -26388,7 +26445,7 @@ function _sfc_render$N(_ctx, _cache, $props, $setup, $data, $options) {
             createElementVNode("div", {
               class: normalizeClass(["ivu-notifications-list", { "ivu-notifications-list-wide": $props.wide }])
             }, [
-              createElementVNode("div", _hoisted_2$k, [
+              createElementVNode("div", _hoisted_2$l, [
                 createVNode(_component_Tabs, {
                   animated: false,
                   "model-value": $props.tab,
@@ -26708,7 +26765,7 @@ const _sfc_main$U = {
   }
 };
 const _hoisted_1$u = { class: "ivu-notifications-item-title" };
-const _hoisted_2$j = { key: 0 };
+const _hoisted_2$k = { key: 0 };
 const _hoisted_3$f = {
   key: 0,
   class: "ivu-notifications-item-tag"
@@ -26770,7 +26827,7 @@ function _sfc_render$L(_ctx, _cache, $props, $setup, $data, $options) {
           }, {
             default: withCtx(() => [
               createElementVNode("div", _hoisted_1$u, [
-                $props.title || _ctx.$slots.title ? (openBlock(), createElementBlock("h4", _hoisted_2$j, [
+                $props.title || _ctx.$slots.title ? (openBlock(), createElementBlock("h4", _hoisted_2$k, [
                   renderSlot(_ctx.$slots, "title", {}, () => [
                     createTextVNode(toDisplayString($props.title), 1)
                   ]),
@@ -27047,7 +27104,7 @@ const _sfc_main$S = {
   }
 };
 const _hoisted_1$t = { class: "ivu-notifications-container-list" };
-const _hoisted_2$i = {
+const _hoisted_2$j = {
   key: 0,
   class: "ivu-notifications-tab-empty"
 };
@@ -27081,7 +27138,7 @@ function _sfc_render$J(_ctx, _cache, $props, $setup, $data, $options) {
         createElementVNode("div", _hoisted_1$t, [
           renderSlot(_ctx.$slots, "default")
         ]),
-        !$props.loading && $data.itemCount === 0 ? (openBlock(), createElementBlock("div", _hoisted_2$i, [
+        !$props.loading && $data.itemCount === 0 ? (openBlock(), createElementBlock("div", _hoisted_2$j, [
           renderSlot(_ctx.$slots, "empty", {}, () => [
             $props.emptyImage ? (openBlock(), createElementBlock("img", {
               key: 0,
@@ -27227,7 +27284,7 @@ const _sfc_main$Q = {
   }
 };
 const _hoisted_1$r = { class: "ivu-number-info" };
-const _hoisted_2$h = {
+const _hoisted_2$i = {
   key: 0,
   class: "ivu-number-info-title"
 };
@@ -27243,7 +27300,7 @@ const _hoisted_5$5 = {
 function _sfc_render$H(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Trend = resolveComponent("Trend");
   return openBlock(), createElementBlock("div", _hoisted_1$r, [
-    $props.title || _ctx.$slots.title ? (openBlock(), createElementBlock("div", _hoisted_2$h, [
+    $props.title || _ctx.$slots.title ? (openBlock(), createElementBlock("div", _hoisted_2$i, [
       renderSlot(_ctx.$slots, "title", {}, () => [
         createTextVNode(toDisplayString($props.title), 1)
       ])
@@ -28453,11 +28510,11 @@ const _sfc_main$M = {
   }
 };
 const _hoisted_1$o = ["title"];
-const _hoisted_2$g = /* @__PURE__ */ createElementVNode("a", null, [
+const _hoisted_2$h = /* @__PURE__ */ createElementVNode("a", null, [
   /* @__PURE__ */ createElementVNode("i", { class: "ivu-icon ivu-icon-ios-arrow-back" })
 ], -1);
 const _hoisted_3$c = [
-  _hoisted_2$g
+  _hoisted_2$h
 ];
 const _hoisted_4$9 = ["title"];
 const _hoisted_5$4 = ["value", "disabled"];
@@ -28743,7 +28800,7 @@ const _hoisted_1$n = {
   key: 0,
   class: "ivu-page-header-breadcrumb"
 };
-const _hoisted_2$f = { class: "ivu-page-header-detail" };
+const _hoisted_2$g = { class: "ivu-page-header-detail" };
 const _hoisted_3$b = {
   key: 1,
   class: "ivu-page-header-logo"
@@ -28804,7 +28861,7 @@ function _sfc_render$C(_ctx, _cache, $props, $setup, $data, $options) {
         })
       ])
     ])) : createCommentVNode("", true),
-    createElementVNode("div", _hoisted_2$f, [
+    createElementVNode("div", _hoisted_2$g, [
       $props.back || _ctx.$slots.back ? (openBlock(), createElementBlock("div", {
         key: 0,
         class: "ivu-page-header-back",
@@ -29800,7 +29857,7 @@ const _sfc_main$E = {
   }
 };
 const _hoisted_1$k = ["name", "value"];
-const _hoisted_2$e = ["onMousemove", "onClick"];
+const _hoisted_2$f = ["onMousemove", "onClick"];
 const _hoisted_3$a = { key: 0 };
 const _hoisted_4$7 = { key: 1 };
 function _sfc_render$x(_ctx, _cache, $props, $setup, $data, $options) {
@@ -29848,7 +29905,7 @@ function _sfc_render$x(_ctx, _cache, $props, $setup, $data, $options) {
             }, null, 2))
           ], 2)
         ], 64))
-      ], 42, _hoisted_2$e);
+      ], 42, _hoisted_2$f);
     }), 128)),
     $props.showText ? withDirectives((openBlock(), createElementBlock("div", {
       key: 0,
@@ -29895,7 +29952,7 @@ const _sfc_main$D = {
   }
 };
 const _hoisted_1$j = { class: "ivu-result" };
-const _hoisted_2$d = {
+const _hoisted_2$e = {
   key: 0,
   class: "ivu-result-title"
 };
@@ -29930,7 +29987,7 @@ function _sfc_render$w(_ctx, _cache, $props, $setup, $data, $options) {
         type: "ios-information"
       })) : createCommentVNode("", true)
     ], 2),
-    $props.title || _ctx.$slots.title ? (openBlock(), createElementBlock("div", _hoisted_2$d, [
+    $props.title || _ctx.$slots.title ? (openBlock(), createElementBlock("div", _hoisted_2$e, [
       renderSlot(_ctx.$slots, "title", {}, () => [
         createTextVNode(toDisplayString($props.title), 1)
       ])
@@ -30637,7 +30694,7 @@ const _sfc_main$A = {
   }
 };
 const _hoisted_1$i = /* @__PURE__ */ createElementVNode("i", { class: "ivu-icon ivu-icon-ios-menu" }, null, -1);
-const _hoisted_2$c = [
+const _hoisted_2$d = [
   _hoisted_1$i
 ];
 function _sfc_render$t(_ctx, _cache, $props, $setup, $data, $options) {
@@ -30648,7 +30705,7 @@ function _sfc_render$t(_ctx, _cache, $props, $setup, $data, $options) {
     withDirectives(createElementVNode("span", {
       onClick: _cache[0] || (_cache[0] = (...args) => $options.toggleCollapse && $options.toggleCollapse(...args)),
       class: normalizeClass($options.zeroWidthTriggerClasses)
-    }, _hoisted_2$c, 2), [
+    }, _hoisted_2$d, 2), [
       [vShow, $options.showZeroTrigger]
     ]),
     createElementVNode("div", {
@@ -31370,7 +31427,7 @@ const _sfc_main$x = {
   }
 };
 const _hoisted_1$h = ["name", "value"];
-const _hoisted_2$b = { class: "ivu-slider-marks" };
+const _hoisted_2$c = { class: "ivu-slider-marks" };
 function _sfc_render$q(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Input_number = resolveComponent("Input-number");
   const _component_SliderMarker = resolveComponent("SliderMarker");
@@ -31421,7 +31478,7 @@ function _sfc_render$q(_ctx, _cache, $props, $setup, $data, $options) {
             onClick: _cache[2] || (_cache[2] = withModifiers((...args) => $options.sliderClick && $options.sliderClick(...args), ["self"]))
           }, null, 6);
         }), 128)),
-        createElementVNode("div", _hoisted_2$b, [
+        createElementVNode("div", _hoisted_2$c, [
           (openBlock(true), createElementBlock(Fragment, null, renderList($options.markList, (item, key2) => {
             return openBlock(), createBlock(_component_SliderMarker, {
               key: key2,
@@ -31995,7 +32052,7 @@ const _sfc_main$t = {
   }
 };
 const _hoisted_1$g = /* @__PURE__ */ createElementVNode("i", null, null, -1);
-const _hoisted_2$a = [
+const _hoisted_2$b = [
   _hoisted_1$g
 ];
 const _hoisted_3$8 = { key: 0 };
@@ -32009,7 +32066,7 @@ function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
   }, [
     createElementVNode("div", {
       class: normalizeClass([$data.prefixCls + "-tail"])
-    }, _hoisted_2$a, 2),
+    }, _hoisted_2$b, 2),
     createElementVNode("div", {
       class: normalizeClass([$data.prefixCls + "-head"])
     }, [
@@ -32873,7 +32930,7 @@ const _sfc_main$o = {
   }
 };
 const _hoisted_1$e = ["width"];
-const _hoisted_2$9 = ["width"];
+const _hoisted_2$a = ["width"];
 const _hoisted_3$7 = ["colspan", "rowspan"];
 const _hoisted_4$4 = { key: 0 };
 const _hoisted_5$1 = ["onClick"];
@@ -32904,7 +32961,7 @@ function _sfc_render$j(_ctx, _cache, $props, $setup, $data, $options) {
       _ctx.$parent.showVerticalScrollBar ? (openBlock(), createElementBlock("col", {
         key: 0,
         width: _ctx.$parent.scrollBarWidth
-      }, null, 8, _hoisted_2$9)) : createCommentVNode("", true)
+      }, null, 8, _hoisted_2$a)) : createCommentVNode("", true)
     ]),
     createElementVNode("thead", null, [
       (openBlock(true), createElementBlock(Fragment, null, renderList($options.headRows, (cols, rowIndex) => {
@@ -33332,7 +33389,7 @@ const _sfc_main$m = {
   }
 };
 const _hoisted_1$c = { key: 0 };
-const _hoisted_2$8 = {
+const _hoisted_2$9 = {
   key: 4,
   class: "ivu-table-cell-tree ivu-table-cell-tree-empty"
 };
@@ -33377,7 +33434,7 @@ function _sfc_render$h(_ctx, _cache, $props, $setup, $data, $options) {
         key: 2,
         type: "ios-remove"
       }))
-    ], 2)) : $options.showTreeNode ? (openBlock(), createElementBlock("div", _hoisted_2$8)) : createCommentVNode("", true),
+    ], 2)) : $options.showTreeNode ? (openBlock(), createElementBlock("div", _hoisted_2$9)) : createCommentVNode("", true),
     $data.renderType === "html" ? (openBlock(), createElementBlock("span", {
       key: 5,
       innerHTML: $props.row[$props.column.key]
@@ -33777,7 +33834,7 @@ const _sfc_main$k = {
   }
 };
 const _hoisted_1$b = { style: { "overflow": "hidden" } };
-const _hoisted_2$7 = ["width"];
+const _hoisted_2$8 = ["width"];
 const _hoisted_3$5 = { class: "ivu-table-row" };
 function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", _hoisted_1$b, [
@@ -33793,7 +33850,7 @@ function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
           return openBlock(), createElementBlock("col", {
             key: index2,
             width: _ctx.setCellWidth(column)
-          }, null, 8, _hoisted_2$7);
+          }, null, 8, _hoisted_2$8);
         }), 128))
       ]),
       createElementVNode("tbody", {
@@ -35342,7 +35399,7 @@ const _hoisted_1$a = {
   cellpadding: "0",
   border: "0"
 };
-const _hoisted_2$6 = ["innerHTML"];
+const _hoisted_2$7 = ["innerHTML"];
 const _hoisted_3$4 = ["innerHTML"];
 const _hoisted_4$2 = {
   class: "ivu-table-resize-line",
@@ -35429,7 +35486,7 @@ function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
                 !$props.data || $props.data.length === 0 ? (openBlock(), createElementBlock("span", {
                   key: 0,
                   innerHTML: $options.localeNoDataText
-                }, null, 8, _hoisted_2$6)) : (openBlock(), createElementBlock("span", {
+                }, null, 8, _hoisted_2$7)) : (openBlock(), createElementBlock("span", {
                   key: 1,
                   innerHTML: $options.localeNoFilteredDataText
                 }, null, 8, _hoisted_3$4))
@@ -35697,7 +35754,7 @@ const _sfc_main$i = {
   }
 };
 const _hoisted_1$9 = { class: "ivu-table-paste" };
-const _hoisted_2$5 = {
+const _hoisted_2$6 = {
   key: 0,
   class: "ivu-table-paste-input"
 };
@@ -35718,7 +35775,7 @@ function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
       default: withCtx(() => [
         createVNode(_component_Col, { span: "12" }, {
           default: withCtx(() => [
-            $props.value !== void 0 || !_ctx.$slots.default ? (openBlock(), createElementBlock("div", _hoisted_2$5, [
+            $props.value !== void 0 || !_ctx.$slots.default ? (openBlock(), createElementBlock("div", _hoisted_2$6, [
               renderSlot(_ctx.$slots, "default", {}, () => [
                 createVNode(_component_Input, mergeProps({
                   modelValue: $data.content,
@@ -35866,7 +35923,7 @@ const _hoisted_1$8 = {
   key: 0,
   class: "ivu-tag-select-option"
 };
-const _hoisted_2$4 = { key: 0 };
+const _hoisted_2$5 = { key: 0 };
 const _hoisted_3$2 = { key: 1 };
 function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Tag = resolveComponent("Tag");
@@ -35893,7 +35950,7 @@ function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
       class: "ivu-tag-select-expand-btn",
       onClick: _cache[0] || (_cache[0] = (...args) => $options.handleToggleExpand && $options.handleToggleExpand(...args))
     }, [
-      $data.expand ? (openBlock(), createElementBlock("span", _hoisted_2$4, toDisplayString($props.locale.collapseText), 1)) : (openBlock(), createElementBlock("span", _hoisted_3$2, toDisplayString($props.locale.expandText), 1)),
+      $data.expand ? (openBlock(), createElementBlock("span", _hoisted_2$5, toDisplayString($props.locale.collapseText), 1)) : (openBlock(), createElementBlock("span", _hoisted_3$2, toDisplayString($props.locale.expandText), 1)),
       $data.expand ? (openBlock(), createBlock(_component_Icon, {
         key: 2,
         type: "ios-arrow-up"
@@ -36298,7 +36355,7 @@ const _sfc_main$a = {
   }
 };
 const _hoisted_1$6 = ["onClick"];
-const _hoisted_2$3 = ["innerHTML"];
+const _hoisted_2$4 = ["innerHTML"];
 function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Checkbox = resolveComponent("Checkbox");
   const _component_Search = resolveComponent("Search");
@@ -36352,7 +36409,7 @@ function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
             }, null, 8, ["modelValue", "disabled"]),
             createElementVNode("span", {
               innerHTML: $options.showLabel(item)
-            }, null, 8, _hoisted_2$3)
+            }, null, 8, _hoisted_2$4)
           ], 10, _hoisted_1$6);
         }), 128)),
         createElementVNode("li", {
@@ -36390,7 +36447,7 @@ const _sfc_main$9 = {
   }
 };
 const _hoisted_1$5 = { key: 0 };
-const _hoisted_2$2 = { key: 0 };
+const _hoisted_2$3 = { key: 0 };
 const _hoisted_3$1 = { key: 0 };
 const _hoisted_4$1 = { key: 0 };
 function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
@@ -36420,7 +36477,7 @@ function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
       }, {
         default: withCtx(() => [
           createVNode(_component_Icon, { type: "ios-arrow-back" }),
-          $props.operations[0] ? (openBlock(), createElementBlock("span", _hoisted_2$2, toDisplayString($props.operations[0]), 1)) : createCommentVNode("", true)
+          $props.operations[0] ? (openBlock(), createElementBlock("span", _hoisted_2$3, toDisplayString($props.operations[0]), 1)) : createCommentVNode("", true)
         ]),
         _: 1
       }, 8, ["disabled", "onClick"])
@@ -36734,7 +36791,8 @@ const _sfc_main$7 = {
   computed: {
     classes() {
       return [
-        `${prefixCls$3}-children`
+        `${prefixCls$3}-children`,
+        `${prefixCls$3}-level${this.data.level}`
       ];
     },
     selectedCls() {
@@ -36782,7 +36840,10 @@ const _sfc_main$7 = {
     node() {
       const Tree2 = findComponentUpward(this, "Tree");
       if (Tree2) {
-        return [Tree2.flatState, Tree2.flatState.find((item) => item.nodeKey === this.data.nodeKey)];
+        return [
+          Tree2.flatState,
+          Tree2.flatState.find((item) => item.nodeKey === this.data.nodeKey)
+        ];
       } else {
         return [];
       }
@@ -36792,7 +36853,7 @@ const _sfc_main$7 = {
     },
     arrowType() {
       const config = this.globalConfig;
-      let type2 = "ios-arrow-forward";
+      let type2 = "md-arrow-dropright";
       if (config) {
         if (config.tree.customArrow) {
           type2 = "";
@@ -36848,8 +36909,11 @@ const _sfc_main$7 = {
     },
     handleClickNode() {
       if (this.TreeInstance.expandNode) {
-        if (this.showArrow)
+        if (this.showArrow) {
           this.handleExpand();
+        } else {
+          this.handleSelect();
+        }
       } else if (this.TreeInstance.selectNode) {
         this.handleSelect();
       }
@@ -36887,6 +36951,7 @@ const _sfc_main$7 = {
   created() {
     const instance = getCurrentInstance();
     this.globalConfig = instance.appContext.config.globalProperties.$VIEWUI;
+    console.log("global", this.globalConfig);
   }
 };
 const _hoisted_1$4 = {
@@ -36897,75 +36962,81 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Icon = resolveComponent("Icon");
   const _component_Checkbox = resolveComponent("Checkbox");
   const _component_Render = resolveComponent("Render");
+  const _component_Cell = resolveComponent("Cell");
   const _component_TreeNode = resolveComponent("TreeNode");
   const _component_collapse_transition = resolveComponent("collapse-transition");
-  return openBlock(), createElementBlock("ul", {
-    class: normalizeClass($options.classes)
-  }, [
-    createElementVNode("li", {
-      onContextmenu: _cache[2] || (_cache[2] = withModifiers(($event) => $options.handleContextmenu($props.data, $event), ["stop"])),
-      onSelectstart: _cache[3] || (_cache[3] = withModifiers(($event) => $options.handlePreventSelect($props.data, $event), ["stop"]))
-    }, [
-      createElementVNode("span", {
-        class: normalizeClass($options.arrowClasses),
-        onClick: _cache[0] || (_cache[0] = (...args) => $options.handleExpand && $options.handleExpand(...args))
-      }, [
-        $options.showArrow ? (openBlock(), createBlock(_component_Icon, {
+  return openBlock(), createElementBlock("div", null, [
+    createVNode(_component_Cell, {
+      class: normalizeClass({
+        "ivu-cell-selected": $props.data.selected,
+        [$data.prefixCls + "-level" + $props.data.level]: true
+      }),
+      onContextmenu: _cache[1] || (_cache[1] = withModifiers(($event) => $options.handleContextmenu($props.data, $event), ["stop"])),
+      onSelectstart: _cache[2] || (_cache[2] = withModifiers(($event) => $options.handlePreventSelect($props.data, $event), ["stop"])),
+      onClick: $options.handleClickNode
+    }, {
+      default: withCtx(() => [
+        createElementVNode("span", {
+          class: normalizeClass($options.arrowClasses),
+          onClick: _cache[0] || (_cache[0] = withModifiers((...args) => $options.handleExpand && $options.handleExpand(...args), ["stop"]))
+        }, [
+          $options.showArrow ? (openBlock(), createBlock(_component_Icon, {
+            key: 0,
+            type: $options.arrowType,
+            custom: $options.customArrowType,
+            size: $options.arrowSize
+          }, null, 8, ["type", "custom", "size"])) : createCommentVNode("", true),
+          $options.showLoading ? (openBlock(), createBlock(_component_Icon, {
+            key: 1,
+            type: "ios-loading",
+            class: "ivu-load-loop"
+          })) : createCommentVNode("", true)
+        ], 2),
+        $props.showCheckbox ? (openBlock(), createBlock(_component_Checkbox, {
           key: 0,
-          type: $options.arrowType,
-          custom: $options.customArrowType,
-          size: $options.arrowSize
-        }, null, 8, ["type", "custom", "size"])) : createCommentVNode("", true),
-        $options.showLoading ? (openBlock(), createBlock(_component_Icon, {
-          key: 1,
-          type: "ios-loading",
-          class: "ivu-load-loop"
-        })) : createCommentVNode("", true)
-      ], 2),
-      $props.showCheckbox ? (openBlock(), createBlock(_component_Checkbox, {
-        key: 0,
-        "model-value": $props.data.checked,
-        indeterminate: $props.data.indeterminate,
-        disabled: $props.data.disabled || $props.data.disableCheckbox,
-        onClick: withModifiers($options.handleCheck, ["prevent"])
-      }, null, 8, ["model-value", "indeterminate", "disabled", "onClick"])) : createCommentVNode("", true),
-      createElementVNode("span", {
-        class: normalizeClass($options.titleClasses),
-        onClick: _cache[1] || (_cache[1] = (...args) => $options.handleClickNode && $options.handleClickNode(...args))
-      }, [
-        $props.data.render ? (openBlock(), createBlock(_component_Render, {
-          key: 0,
-          render: $props.data.render,
-          data: $props.data,
-          node: $options.node
-        }, null, 8, ["render", "data", "node"])) : $options.isParentRender ? (openBlock(), createBlock(_component_Render, {
-          key: 1,
-          render: $options.parentRender,
-          data: $props.data,
-          node: $options.node
-        }, null, 8, ["render", "data", "node"])) : (openBlock(), createElementBlock(Fragment, { key: 2 }, [
-          createTextVNode(toDisplayString($props.data.title), 1)
-        ], 64))
-      ], 2),
-      createVNode(_component_collapse_transition, { appear: $props.appear }, {
-        default: withCtx(() => [
-          $props.data.expand ? (openBlock(), createElementBlock("div", _hoisted_1$4, [
-            (openBlock(true), createElementBlock(Fragment, null, renderList($options.children, (item, i) => {
-              return openBlock(), createBlock(_component_TreeNode, {
-                appear: $data.appearByClickArrow,
-                key: i,
-                data: item,
-                multiple: $props.multiple,
-                "show-checkbox": $props.showCheckbox,
-                "children-key": $props.childrenKey
-              }, null, 8, ["appear", "data", "multiple", "show-checkbox", "children-key"]);
-            }), 128))
-          ])) : createCommentVNode("", true)
-        ]),
-        _: 1
-      }, 8, ["appear"])
-    ], 32)
-  ], 2);
+          "model-value": $props.data.checked,
+          indeterminate: $props.data.indeterminate,
+          disabled: $props.data.disabled || $props.data.disableCheckbox,
+          onClick: withModifiers($options.handleCheck, ["prevent"])
+        }, null, 8, ["model-value", "indeterminate", "disabled", "onClick"])) : createCommentVNode("", true),
+        createElementVNode("span", {
+          class: normalizeClass($options.titleClasses)
+        }, [
+          $props.data.render ? (openBlock(), createBlock(_component_Render, {
+            key: 0,
+            render: $props.data.render,
+            data: $props.data,
+            node: $options.node
+          }, null, 8, ["render", "data", "node"])) : $options.isParentRender ? (openBlock(), createBlock(_component_Render, {
+            key: 1,
+            render: $options.parentRender,
+            data: $props.data,
+            node: $options.node
+          }, null, 8, ["render", "data", "node"])) : (openBlock(), createElementBlock(Fragment, { key: 2 }, [
+            createTextVNode(toDisplayString($props.data.title), 1)
+          ], 64))
+        ], 2)
+      ]),
+      _: 1
+    }, 8, ["class", "onClick"]),
+    createVNode(_component_collapse_transition, { appear: $props.appear }, {
+      default: withCtx(() => [
+        $props.data.expand ? (openBlock(), createElementBlock("div", _hoisted_1$4, [
+          (openBlock(true), createElementBlock(Fragment, null, renderList($options.children, (item, i) => {
+            return openBlock(), createBlock(_component_TreeNode, {
+              appear: $data.appearByClickArrow,
+              key: i,
+              data: item,
+              multiple: $props.multiple,
+              "show-checkbox": $props.showCheckbox,
+              "children-key": $props.childrenKey
+            }, null, 8, ["appear", "data", "multiple", "show-checkbox", "children-key"]);
+          }), 128))
+        ])) : createCommentVNode("", true)
+      ]),
+      _: 1
+    }, 8, ["appear"])
+  ]);
 }
 var TreeNode = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$6]]);
 const prefixCls$2 = "ivu-tree";
@@ -36973,7 +37044,12 @@ const _sfc_main$6 = {
   name: "Tree",
   mixins: [Locale],
   components: { TreeNode, Dropdown, DropdownMenu },
-  emits: ["on-select-change", "on-check-change", "on-contextmenu", "on-toggle-expand"],
+  emits: [
+    "on-select-change",
+    "on-check-change",
+    "on-contextmenu",
+    "on-toggle-expand"
+  ],
   provide() {
     return {
       TreeInstance: this
@@ -37044,6 +37120,7 @@ const _sfc_main$6 = {
       handler() {
         this.stateTree = this.data;
         this.flatState = this.compileFlatState();
+        console.log("state", this.stateTree);
         this.rebuildTree();
       }
     }
@@ -37062,8 +37139,10 @@ const _sfc_main$6 = {
       let keyCounter = 0;
       let childrenKey = this.childrenKey;
       const flatTree = [];
-      function flattenChildren(node, parent) {
+      function flattenChildren(node, parent, level = 0) {
         node.nodeKey = keyCounter++;
+        let currLevel = level;
+        node.level = currLevel;
         flatTree[node.nodeKey] = { node, nodeKey: node.nodeKey };
         if (typeof parent != "undefined") {
           flatTree[node.nodeKey].parent = parent.nodeKey;
@@ -37071,7 +37150,8 @@ const _sfc_main$6 = {
         }
         if (node[childrenKey]) {
           flatTree[node.nodeKey][childrenKey] = [];
-          node[childrenKey].forEach((child) => flattenChildren(child, node));
+          level++;
+          node[childrenKey].forEach((child) => flattenChildren(child, node, level));
         }
       }
       this.stateTree.forEach((rootNode) => {
@@ -37116,6 +37196,13 @@ const _sfc_main$6 = {
     getCheckedNodes() {
       return this.flatState.filter((obj) => obj.node.checked).map((obj) => obj.node);
     },
+    getParentCheckedNode() {
+      let checkedArr = this.flatState.filter((obj) => obj.node.checked);
+      const parentKeys = checkedArr.map((ele) => ele.nodeKey);
+      return checkedArr.filter((ele) => {
+        return !parentKeys.includes(ele.parent);
+      }).map((obj) => obj.node);
+    },
     getCheckedAndIndeterminateNodes() {
       return this.flatState.filter((obj) => obj.node.checked || obj.node.indeterminate).map((obj) => obj.node);
     },
@@ -37151,7 +37238,11 @@ const _sfc_main$6 = {
       node.indeterminate = false;
       this.updateTreeUp(nodeKey);
       this.updateTreeDown(node, { checked, indeterminate: false });
-      this.$emit("on-check-change", this.getCheckedNodes(), node);
+      if (this.checkStrictly) {
+        this.$emit("on-check-change", this.getCheckedNodes(), node);
+      } else {
+        this.$emit("on-check-change", this.getParentCheckedNode(), node);
+      }
     },
     handleContextmenu({ data, event }) {
       if (this.contextMenuVisible)
@@ -37200,47 +37291,51 @@ function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_TreeNode = resolveComponent("TreeNode");
   const _component_DropdownMenu = resolveComponent("DropdownMenu");
   const _component_Dropdown = resolveComponent("Dropdown");
-  return openBlock(), createElementBlock("div", {
+  const _component_CellGroup = resolveComponent("CellGroup");
+  return openBlock(), createBlock(_component_CellGroup, {
     class: normalizeClass($data.prefixCls),
     ref: "treeWrap"
-  }, [
-    (openBlock(true), createElementBlock(Fragment, null, renderList($data.stateTree, (item, i) => {
-      return openBlock(), createBlock(_component_TreeNode, {
-        key: i,
-        data: item,
-        visible: "",
-        multiple: $props.multiple,
-        "show-checkbox": $props.showCheckbox,
-        "children-key": $props.childrenKey
-      }, null, 8, ["data", "multiple", "show-checkbox", "children-key"]);
-    }), 128)),
-    !$data.stateTree.length ? (openBlock(), createElementBlock("div", {
-      key: 0,
-      class: normalizeClass([$data.prefixCls + "-empty"])
-    }, toDisplayString($options.localeEmptyText), 3)) : createCommentVNode("", true),
-    createElementVNode("div", {
-      class: "ivu-tree-context-menu",
-      style: normalizeStyle($data.contextMenuStyles)
-    }, [
-      createVNode(_component_Dropdown, {
-        trigger: "custom",
-        visible: $data.contextMenuVisible,
-        transfer: "",
-        onOnClick: $options.handleClickDropdownItem,
-        onOnClickoutside: $options.handleClickContextMenuOutside
-      }, {
-        list: withCtx(() => [
-          createVNode(_component_DropdownMenu, null, {
-            default: withCtx(() => [
-              renderSlot(_ctx.$slots, "contextMenu")
-            ]),
-            _: 3
-          })
-        ]),
-        _: 3
-      }, 8, ["visible", "onOnClick", "onOnClickoutside"])
-    ], 4)
-  ], 2);
+  }, {
+    default: withCtx(() => [
+      (openBlock(true), createElementBlock(Fragment, null, renderList($data.stateTree, (item, i) => {
+        return openBlock(), createBlock(_component_TreeNode, {
+          key: i,
+          data: item,
+          visible: "",
+          multiple: $props.multiple,
+          "show-checkbox": $props.showCheckbox,
+          "children-key": $props.childrenKey
+        }, null, 8, ["data", "multiple", "show-checkbox", "children-key"]);
+      }), 128)),
+      !$data.stateTree.length ? (openBlock(), createElementBlock("div", {
+        key: 0,
+        class: normalizeClass([$data.prefixCls + "-empty"])
+      }, toDisplayString($options.localeEmptyText), 3)) : createCommentVNode("", true),
+      createElementVNode("div", {
+        class: "ivu-tree-context-menu",
+        style: normalizeStyle($data.contextMenuStyles)
+      }, [
+        createVNode(_component_Dropdown, {
+          trigger: "custom",
+          visible: $data.contextMenuVisible,
+          transfer: "",
+          onOnClick: $options.handleClickDropdownItem,
+          onOnClickoutside: $options.handleClickContextMenuOutside
+        }, {
+          list: withCtx(() => [
+            createVNode(_component_DropdownMenu, null, {
+              default: withCtx(() => [
+                renderSlot(_ctx.$slots, "contextMenu")
+              ]),
+              _: 3
+            })
+          ]),
+          _: 3
+        }, 8, ["visible", "onOnClick", "onOnClickoutside"])
+      ], 4)
+    ]),
+    _: 3
+  }, 8, ["class"]);
 }
 var Tree = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$5]]);
 const _sfc_main$5 = {
@@ -37267,11 +37362,24 @@ const _sfc_main$5 = {
     loadData: {
       type: Function
     },
+    checkStrictly: {
+      type: Boolean,
+      default: false
+    },
+    expandNode: {
+      type: Boolean,
+      default: false
+    },
     transfer: {
       type: Boolean,
       default() {
         const global2 = getCurrentInstance().appContext.config.globalProperties;
         return !global2.$VIEWUI || global2.$VIEWUI.transfer === "" ? false : global2.$VIEWUI.transfer;
+      }
+    },
+    normalizer: {
+      type: Function,
+      default: () => {
       }
     }
   },
@@ -37334,11 +37442,15 @@ const _sfc_main$5 = {
     }
   },
   methods: {
-    handleSelectNode(selectedNodes, currentNode) {
+    handleSelectNode(selectedNodes) {
       if (this.multiple) {
         if (selectedNodes.length) {
-          this.currentValue = selectedNodes.map((item) => item.value);
-          this.handleUpdateSelectValue(currentNode.value, currentNode.title);
+          this.handleUpdateSelectValue("", "");
+          this.currentValue = [];
+          selectedNodes.forEach((ele) => {
+            this.currentValue.push(ele.value);
+            this.handleUpdateSelectValue(ele.value, ele.title);
+          });
         } else {
           this.currentValue = [];
           this.handleUpdateSelectValue("", "");
@@ -37360,6 +37472,11 @@ const _sfc_main$5 = {
     },
     handleUpdateTreeNodes(data, isInit = false) {
       data.forEach((item) => {
+        if (this.normalizer(item)) {
+          item.title = this.normalizer(item).title;
+          item.value = this.normalizer(item).value;
+          item.children = this.normalizer(item).children || item.children;
+        }
         if (this.valueToArray.indexOf(item.value) >= 0) {
           if (this.isCheckboxUsable) {
             item.checked = true;
@@ -37438,11 +37555,12 @@ function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
         multiple: $props.multiple,
         onOnSelectChange: $options.handleSelectNode,
         onOnCheckChange: $options.handleSelectNode,
-        "check-strictly": "",
+        "check-strictly": $props.checkStrictly,
         "show-checkbox": $props.multiple && $props.showCheckbox,
         "check-directly": "",
+        expandNode: $props.expandNode,
         "load-data": $props.loadData
-      }, null, 8, ["data", "multiple", "onOnSelectChange", "onOnCheckChange", "show-checkbox", "load-data"])
+      }, null, 8, ["data", "multiple", "onOnSelectChange", "onOnCheckChange", "check-strictly", "show-checkbox", "expandNode", "load-data"])
     ]),
     _: 1
   }, 16, ["multiple", "class", "transfer-class-name", "onOnChange", "onOnOpenChange", "transfer"]);
@@ -37523,7 +37641,7 @@ const _sfc_main$3 = {
   }
 };
 const _hoisted_1$2 = ["onClick"];
-const _hoisted_2$1 = ["onClick"];
+const _hoisted_2$2 = ["onClick"];
 function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Icon = resolveComponent("Icon");
   const _component_i_progress = resolveComponent("i-progress");
@@ -37543,7 +37661,7 @@ function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
             type: $options.format(file)
           }, null, 8, ["type"]),
           createTextVNode(" " + toDisplayString(file.name), 1)
-        ], 8, _hoisted_2$1),
+        ], 8, _hoisted_2$2),
         withDirectives(createVNode(_component_Icon, {
           type: "ios-close",
           class: normalizeClass([$data.prefixCls + "-list-remove"]),
@@ -37742,6 +37860,21 @@ const _sfc_main$2 = {
     webkitdirectory: {
       type: Boolean,
       default: false
+    },
+    showType: {
+      type: String,
+      validator(value) {
+        return oneOf(value, ["Image", "Video", "File", "Custom"]);
+      },
+      default: "File"
+    },
+    imageWidth: {
+      type: Number,
+      default: 100
+    },
+    imageHeight: {
+      type: Number,
+      default: 100
     }
   },
   data() {
@@ -37749,7 +37882,9 @@ const _sfc_main$2 = {
       prefixCls,
       dragOver: false,
       fileList: [],
-      tempIndex: 1
+      tempIndex: 1,
+      imageDisabled: false,
+      imageList: []
     };
   },
   computed: {
@@ -37766,12 +37901,13 @@ const _sfc_main$2 = {
   },
   methods: {
     handleClick() {
-      if (this.itemDisabled)
+      if (this.itemDisabled || this.imageDisabled)
         return;
       this.$refs.input.click();
     },
     handleChange(e) {
       const files2 = e.target.files;
+      console.log("files", files2);
       if (!files2) {
         return;
       }
@@ -37884,11 +38020,16 @@ const _sfc_main$2 = {
     },
     handleSuccess(res, file) {
       const _file = this.getFile(file);
+      if (this.showType === "Image") {
+        this.imageDisabled = true;
+        this.imageList.push(res.result.filePath);
+      }
       if (_file) {
         _file.status = "finished";
         _file.response = res;
         this.onSuccess(res, _file, this.fileList);
         this.handleFormItemChange("change", _file);
+        console.log(this.fileList);
         setTimeout(() => {
           _file.showProgress = false;
         }, 1e3);
@@ -37905,6 +38046,7 @@ const _sfc_main$2 = {
       const fileList = this.fileList;
       fileList.splice(fileList.indexOf(file), 1);
       this.onRemove(file, fileList);
+      this.imageDisabled = false;
     },
     handlePreview(file) {
       if (file.status === "finished") {
@@ -37929,31 +38071,74 @@ const _sfc_main$2 = {
     }
   }
 };
-const _hoisted_1$1 = ["multiple", "webkitdirectory", "accept"];
+const _hoisted_1$1 = {
+  key: 0,
+  class: "image-list"
+};
+const _hoisted_2$1 = ["multiple", "webkitdirectory", "accept"];
 function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_Image = resolveComponent("Image");
+  const _component_Icon = resolveComponent("Icon");
   const _component_upload_list = resolveComponent("upload-list");
   return openBlock(), createElementBlock("div", {
     class: normalizeClass([$data.prefixCls])
   }, [
     createElementVNode("div", {
-      class: normalizeClass($options.classes),
-      onClick: _cache[1] || (_cache[1] = (...args) => $options.handleClick && $options.handleClick(...args)),
-      onDrop: _cache[2] || (_cache[2] = withModifiers((...args) => $options.onDrop && $options.onDrop(...args), ["prevent"])),
-      onPaste: _cache[3] || (_cache[3] = (...args) => $options.handlePaste && $options.handlePaste(...args)),
-      onDragover: _cache[4] || (_cache[4] = withModifiers(($event) => $data.dragOver = true, ["prevent"])),
-      onDragleave: _cache[5] || (_cache[5] = withModifiers(($event) => $data.dragOver = false, ["prevent"]))
+      class: normalizeClass([$data.prefixCls + "-wrap"])
     }, [
-      createElementVNode("input", {
-        ref: "input",
-        type: "file",
-        class: normalizeClass([$data.prefixCls + "-input"]),
-        onChange: _cache[0] || (_cache[0] = (...args) => $options.handleChange && $options.handleChange(...args)),
-        multiple: $props.multiple,
-        webkitdirectory: $props.webkitdirectory,
-        accept: $props.accept
-      }, null, 42, _hoisted_1$1),
-      renderSlot(_ctx.$slots, "default")
-    ], 34),
+      $props.showType === "Image" && $data.imageList.length && $props.multiple ? (openBlock(), createElementBlock("ul", _hoisted_1$1, [
+        (openBlock(true), createElementBlock(Fragment, null, renderList($data.imageList, (item) => {
+          return openBlock(), createElementBlock("li", {
+            key: item,
+            style: normalizeStyle({
+              width: $props.imageWidth + "px",
+              height: $props.imageHeight + "px"
+            })
+          }, [
+            createVNode(_component_Image, {
+              src: item,
+              preview: "",
+              "preview-list": $data.imageList
+            }, null, 8, ["src", "preview-list"])
+          ], 4);
+        }), 128))
+      ])) : createCommentVNode("", true),
+      createElementVNode("div", {
+        class: normalizeClass($options.classes),
+        onClick: _cache[1] || (_cache[1] = (...args) => $options.handleClick && $options.handleClick(...args)),
+        onDrop: _cache[2] || (_cache[2] = withModifiers((...args) => $options.onDrop && $options.onDrop(...args), ["prevent"])),
+        onPaste: _cache[3] || (_cache[3] = (...args) => $options.handlePaste && $options.handlePaste(...args)),
+        onDragover: _cache[4] || (_cache[4] = withModifiers(($event) => $data.dragOver = true, ["prevent"])),
+        onDragleave: _cache[5] || (_cache[5] = withModifiers(($event) => $data.dragOver = false, ["prevent"]))
+      }, [
+        createElementVNode("input", {
+          ref: "input",
+          type: "file",
+          class: normalizeClass([$data.prefixCls + "-input"]),
+          onChange: _cache[0] || (_cache[0] = (...args) => $options.handleChange && $options.handleChange(...args)),
+          multiple: $props.multiple,
+          webkitdirectory: $props.webkitdirectory,
+          accept: $props.accept
+        }, null, 42, _hoisted_2$1),
+        $props.showType === "Image" ? (openBlock(), createElementBlock("div", {
+          key: 0,
+          class: normalizeClass([$data.prefixCls + "-drag", $data.prefixCls + "-imageType"])
+        }, [
+          $data.fileList.length === 0 || !$props.multiple ? (openBlock(), createBlock(_component_Icon, {
+            key: 0,
+            type: "ios-add",
+            size: "62"
+          })) : createCommentVNode("", true),
+          !$props.multiple && $data.fileList.length > 0 && $data.fileList[0].status === "finished" ? (openBlock(), createBlock(_component_Image, {
+            key: 1,
+            src: $data.fileList[0].response.result.filePath,
+            preview: "",
+            "preview-list": $data.imageList
+          }, null, 8, ["src", "preview-list"])) : createCommentVNode("", true)
+        ], 2)) : createCommentVNode("", true),
+        renderSlot(_ctx.$slots, "default")
+      ], 34)
+    ], 2),
     renderSlot(_ctx.$slots, "tip"),
     $props.showUploadList ? (openBlock(), createBlock(_component_upload_list, {
       key: 0,
@@ -38374,10 +38559,10 @@ var style = {
   }
 };
 const name = "view-ui-plus";
-const version$1 = "1.3.14";
+const version$1 = "1.3.17";
 const title = "ViewUIPlus";
-const description = "A high quality UI components Library with Vue.js 3";
-const homepage = "http://www.iviewui.com";
+const description = "A high quality UI components Library with Vue.js 3 \u4FEE\u6539tree\u548CtreeSelect\u7EC4\u4EF6";
+const homepage = "https://github.com/YangZhen-Code/ViewUIPlus-Yz";
 const keywords = [
   "iview",
   "vue",
@@ -38390,7 +38575,7 @@ const keywords = [
   "framework"
 ];
 const main = "dist/viewuiplus.min.js";
-const typings = "types/index.d.ts";
+const typings = "types/global.d.ts";
 const files = [
   "dist",
   "src",
@@ -38406,12 +38591,12 @@ const scripts = {
 };
 const repository = {
   type: "git",
-  url: "https://github.com/view-design/ViewUIPlus"
+  url: "https://github.com/YangZhen-Code/ViewUIPlus-Yz"
 };
-const author = "Aresn";
+const author = "Aresn Yz";
 const license = "MIT";
 const bugs = {
-  url: "https://github.com/view-design/ViewUIPlus/issues"
+  url: "https://github.com/YangZhen-Code/ViewUIPlus-Yz/issues"
 };
 const dependencies = {
   "async-validator": "^3.3.0",
@@ -38441,19 +38626,6 @@ const devDependencies = {
   "cross-env": "^5.2.0",
   eslint: "^6.7.2",
   "eslint-plugin-vue": "^7.0.0-0",
-  gulp: "^4.0.2",
-  "gulp-autoprefixer": "^8.0.0",
-  "gulp-clean-css": "^4.3.0",
-  "gulp-less": "^4.0.1",
-  "gulp-rename": "^2.0.0",
-  karma: "^2.0.5",
-  "karma-chrome-launcher": "^2.2.0",
-  "karma-coverage": "^1.1.1",
-  "karma-mocha": "^1.3.0",
-  "karma-sinon-chai": "^1.3.3",
-  "karma-sourcemap-loader": "^0.3.7",
-  "karma-spec-reporter": "^0.0.32",
-  "karma-webpack": "^2.0.13",
   less: "^2.7.3",
   "less-loader": "^4.1.0",
   "lint-staged": "^10.5.4",
@@ -38463,7 +38635,7 @@ const devDependencies = {
   "sinon-chai": "^3.3.0",
   "style-loader": "^0.20.2",
   tslint: "^5.14.0",
-  typescript: "^3.3.4000",
+  typescript: "^4.9.3",
   "uglifyjs-webpack-plugin": "^1.3.0",
   "url-loader": "^1.1.2",
   vite: "^2.6.4",
@@ -38473,7 +38645,8 @@ const devDependencies = {
   "vue-loader": "^17.0.0",
   "vue-router": "^4.0.14",
   "vue-style-loader": "^4.1.3",
-  "vue-template-compiler": "^2.6.14"
+  "vue-template-compiler": "^2.6.14",
+  "vue-tsc": "^1.8.26"
 };
 var pkg = {
   name,

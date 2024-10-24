@@ -58,7 +58,10 @@
      &-select {
         display: inline-block;
     }
-    
+    &-wrap{
+        display: flex;
+    }
+
     &-drag{
         background: #fff;
         border: 1px dashed @border-color-base;
@@ -75,5 +78,11 @@
     }
     &-dragOver{
         border: 2px dashed @primary-color;
+    }
+    &-imageType{
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
     }
 }

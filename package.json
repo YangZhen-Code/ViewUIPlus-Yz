@@ -1,8 +1,8 @@
 {
     "name": "view-ui-plus",
-    "version": "1.3.15",
+    "version": "1.3.17",
     "title": "ViewUIPlus",
-    "description": "A high quality UI components Library with Vue.js 3",
+    "description": "A high quality UI components Library with Vue.js 3 修改tree和treeSelect组件",
     "homepage": "https://github.com/YangZhen-Code/ViewUIPlus-Yz",
     "keywords": [
         "iview",
@@ -16,7 +16,7 @@
         "framework"
     ],
     "main": "dist/viewuiplus.min.js",
-    "typings": "types/index.d.ts",
+    "typings": "types/global.d.ts",
     "files": [
         "dist",
         "src",
@@ -52,8 +52,7 @@
         "popper.js": "^1.14.6",
         "select": "^1.1.2",
         "tinycolor2": "^1.4.1",
-        "v-click-outside-x": "^3.7.1",
-        "view-ui-plus": "1.3.15"
+        "v-click-outside-x": "^3.7.1"
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "^1.9.3",
@@ -68,19 +67,6 @@
         "cross-env": "^5.2.0",
         "eslint": "^6.7.2",
         "eslint-plugin-vue": "^7.0.0-0",
-        "gulp": "^4.0.2",
-        "gulp-autoprefixer": "^8.0.0",
-        "gulp-clean-css": "^4.3.0",
-        "gulp-less": "^4.0.1",
-        "gulp-rename": "^2.0.0",
-        "karma": "^2.0.5",
-        "karma-chrome-launcher": "^2.2.0",
-        "karma-coverage": "^1.1.1",
-        "karma-mocha": "^1.3.0",
-        "karma-sinon-chai": "^1.3.3",
-        "karma-sourcemap-loader": "^0.3.7",
-        "karma-spec-reporter": "^0.0.32",
-        "karma-webpack": "^2.0.13",
         "less": "^2.7.3",
         "less-loader": "^4.1.0",
         "lint-staged": "^10.5.4",
@@ -90,7 +76,7 @@
         "sinon-chai": "^3.3.0",
         "style-loader": "^0.20.2",
         "tslint": "^5.14.0",
-        "typescript": "^3.3.4000",
+        "typescript": "^4.9.3",
         "uglifyjs-webpack-plugin": "^1.3.0",
         "url-loader": "^1.1.2",
         "vite": "^2.6.4",
@@ -100,6 +86,7 @@
         "vue-loader": "^17.0.0",
         "vue-router": "^4.0.14",
         "vue-style-loader": "^4.1.3",
-        "vue-template-compiler": "^2.6.14"
+        "vue-template-compiler": "^2.6.14",
+        "vue-tsc": "^1.8.26"
     }
 }
