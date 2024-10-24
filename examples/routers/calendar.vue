@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Calendar v-model="value" hide-type>
+        <Calendar v-model="value" type="year" multiple :defaultList="defaultList" hide-type>
             <template #month="{ data }">
                 <Badge status="warning" text="看苹果发布会" v-if="data.day === '2019-09-11'" />
                 <Badge status="success" text="中秋节" v-if="data.day === '2019-09-13'" />
@@ -13,7 +13,8 @@
 export default {
     data () {
         return {
-            value: '2019-09-05'
+            value: '2019-09-05',
+            defaultList:['2019-08','2019-07']
         }
     }
 }

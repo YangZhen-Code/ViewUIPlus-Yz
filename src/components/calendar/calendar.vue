@@ -83,6 +83,7 @@ export default {
         "update:modelValue",
         "on-cell-click",
         "on-cell-contextmenu",
+        "on-select",
     ],
     provide() {
         return {
@@ -160,6 +161,11 @@ export default {
             type: Boolean,
             default: false,
         },
+        // 多选时默认值
+        defaultList: {
+            type: Array,
+            default: () => [],
+        },
     },
     data() {
         const value = this.modelValue ? this.modelValue : new Date();
@@ -176,6 +182,15 @@ export default {
         },
         type(val) {
             this.mode = val;
+        },
+        defaultList: {
+            handler(val) {
+                if (this.multiple) {
+                    this.selectList = [...val];
+                    console.log("watch", this.selectList);
+                }
+            },
+            immediate:true
         },
     },
     computed: {

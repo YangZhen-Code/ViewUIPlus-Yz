@@ -97,6 +97,7 @@ export default {
     methods: {
         handleClickDate(date) {
             let selectList = this.CalendarInstance.selectList;
+            console.log(selectList);
             if (selectList.includes(date)) {
                 let index = selectList.findIndex((e) => e === date);
                 selectList.splice(index, 1);
