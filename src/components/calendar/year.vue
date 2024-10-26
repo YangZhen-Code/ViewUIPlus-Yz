@@ -20,6 +20,11 @@
                                       month.text
                                   )
                                 : month.text === currentMonth,
+                            'ivu-calendar-table-day-disabled': month.disabled,
+                            'ivu-calendar-table-day-default':
+                                CalendarInstance.defaultList.includes(
+                                    month.text
+                                ),
                         }"
                         :style="dayStyles"
                         @click="handleClickDate(month.text)"
@@ -34,6 +39,7 @@
                                     type: month.type + '-year',
                                     month: month.text,
                                     selected: month.text === currentMonth,
+                                    disabled: month.disabled,
                                 }"
                                 name="year"
                             ></slot>
@@ -74,6 +80,13 @@ export default {
                     text: day.format("YYYY-MM"),
                     month: this.CalendarInstance.locale.months[i],
                     type: "current",
+                    disabled: this.CalendarInstance.allowList.length
+                        ? this.CalendarInstance.allowList.includes(
+                              day.format("YYYY-MM")
+                          )
+                            ? false
+                            : true
+                        : false,
                 });
             }
             return months;
@@ -97,7 +110,7 @@ export default {
     methods: {
         handleClickDate(date) {
             let selectList = this.CalendarInstance.selectList;
-            console.log(selectList);
+            // console.log(selectList);
             if (selectList.includes(date)) {
                 let index = selectList.findIndex((e) => e === date);
                 selectList.splice(index, 1);

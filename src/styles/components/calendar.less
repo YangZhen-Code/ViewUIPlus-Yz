@@ -1,36 +1,35 @@
-.ivu-calendar{
-    &-header{
+.ivu-calendar {
+    &-header {
         display: flex;
         justify-content: space-between;
         padding: 12px;
         border-bottom: 1px solid @border-color-split;
 
-        &-title{
+        &-title {
             color: @title-color;
             font-size: 18px;
         }
 
-        &-action{
-
-        }
+        &-action {}
     }
 
-    &-table{
+    &-table {
         table-layout: fixed;
         width: 100%;
 
-        thead th{
+        thead th {
             padding: 24px 0 6px 6px;
             text-align: left;
             font-size: 14px;
         }
 
-        td{
+        td {
             font-size: 14px;
             border-bottom: 1px solid @border-color-split;
             border-right: 1px solid @border-color-split;
             vertical-align: top;
         }
+
         tr:first-child td {
             border-top: 1px solid @border-color-split;
         }
@@ -39,29 +38,42 @@
             border-left: 1px solid @border-color-split;
         }
 
-        &-day{
+        &-day {
             box-sizing: border-box;
             height: 100px;
             padding: 6px;
             transition: background-color @transition-time @ease-in-out;
             cursor: pointer;
-            &:hover{
-                background-color: ~`colorPalette("@{primary-color}", 1)`;
+
+            &:hover {
+                background-color:~`colorPalette("@{primary-color}", 1)`;
             }
-            &-other{
-                .ivu-calendar-table-day-title{
+
+            &-other {
+                .ivu-calendar-table-day-title {
                     color: @btn-disable-color;
                 }
             }
-            &-current{
-                .ivu-calendar-table-day-title{
+
+            &-current {
+                .ivu-calendar-table-day-title {
                     color: @primary-color;
                 }
-                background-color: ~`colorPalette("@{primary-color}", 1)`;
+
+                background-color:~`colorPalette("@{primary-color}", 1)`;
+            }
+
+            &-default {
+                background-color: @red-6;
+
+                .ivu-calendar-table-day-title {
+                    color: #fff;
+                }
             }
         }
     }
-    &-table-year{
+
+    &-table-year {
         padding-top: 24px;
     }
 }

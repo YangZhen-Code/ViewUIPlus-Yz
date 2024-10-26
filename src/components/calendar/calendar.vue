@@ -166,13 +166,19 @@ export default {
             type: Array,
             default: () => [],
         },
+        // 可选值
+        activeList: {
+            type: Array,
+            default: () => [],
+        },
     },
     data() {
         const value = this.modelValue ? this.modelValue : new Date();
         return {
             currentValue: dayjs(value),
             mode: this.type,
-            selectList: [],
+            selectList: [], //已点击cell
+            allowList:[] //可点击cell
         };
     },
     watch: {
@@ -186,11 +192,19 @@ export default {
         defaultList: {
             handler(val) {
                 if (this.multiple) {
-                    this.selectList = [...val];
+                    // this.selectList = [...val];
                     console.log("watch", this.selectList);
                 }
             },
-            immediate:true
+            immediate: true,
+        },
+        activeList: {
+            handler(val) {
+                if (this.multiple) {
+                   this.allowList = [...val]
+                }
+            },
+            immediate: true,
         },
     },
     computed: {
@@ -216,7 +230,7 @@ export default {
                 prevDate = dayjs(firstDate).subtract(1, "year");
             }
             this.handleChangeDate(prevDate);
-            this.$emit("on-prev");
+            this.$emit("on-prev",prevDate.format('YYYY'));
         },
         handleNext() {
             const firstDate = this.currentValue.format("YYYY-MM-01");
@@ -227,7 +241,7 @@ export default {
                 nextDate = dayjs(firstDate).add(1, "year");
             }
             this.handleChangeDate(nextDate);
-            this.$emit("on-next");
+            this.$emit("on-next",nextDate.format('YYYY'));
         },
         handleToday() {
             const nowDate = dayjs(new Date());
@@ -239,10 +253,11 @@ export default {
             this.$emit("on-today");
         },
         handleChangeDate(val) {
+            this.currentValue = val;
+            // console.log('select',this.selectList);
             if (this.multiple) {
                 this.$emit("on-select", this.selectList);
             } else {
-                this.currentValue = val;
                 const date = new Date(val.format("YYYY-MM-DD"));
                 this.$emit("update:modelValue", date);
                 this.$emit("on-change", date);
