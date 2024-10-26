@@ -6970,7 +6970,8 @@ const _sfc_main$27 = {
         months.push({
           text: day.format("YYYY-MM"),
           month: this.CalendarInstance.locale.months[i],
-          type: "current"
+          type: "current",
+          disabled: this.CalendarInstance.allowList.length ? this.CalendarInstance.allowList.includes(day.format("YYYY-MM")) ? false : true : false
         });
       }
       return months;
@@ -7024,7 +7025,9 @@ function _sfc_render$1U(_ctx, _cache, $props, $setup, $data, $options) {
             }, [
               createElementVNode("div", {
                 class: normalizeClass(["ivu-calendar-table-day", {
-                  "ivu-calendar-table-day-current": $props.multiple ? $options.CalendarInstance.selectList.includes(month.text) : month.text === $options.currentMonth
+                  "ivu-calendar-table-day-current": $props.multiple ? $options.CalendarInstance.selectList.includes(month.text) : month.text === $options.currentMonth,
+                  "ivu-calendar-table-day-disabled": month.disabled,
+                  "ivu-calendar-table-day-default": $options.CalendarInstance.defaultList.includes(month.text)
                 }]),
                 style: normalizeStyle($options.dayStyles),
                 onClick: ($event) => $options.handleClickDate(month.text)
@@ -7036,7 +7039,8 @@ function _sfc_render$1U(_ctx, _cache, $props, $setup, $data, $options) {
                     data: {
                       type: month.type + "-year",
                       month: month.text,
-                      selected: month.text === $options.currentMonth
+                      selected: month.text === $options.currentMonth,
+                      disabled: month.disabled
                     }
                   })
                 ])
@@ -7068,7 +7072,8 @@ const _sfc_main$26 = {
     "on-change",
     "update:modelValue",
     "on-cell-click",
-    "on-cell-contextmenu"
+    "on-cell-contextmenu",
+    "on-select"
   ],
   provide() {
     return {
@@ -7139,6 +7144,14 @@ const _sfc_main$26 = {
     multiple: {
       type: Boolean,
       default: false
+    },
+    defaultList: {
+      type: Array,
+      default: () => []
+    },
+    activeList: {
+      type: Array,
+      default: () => []
     }
   },
   data() {
@@ -7146,7 +7159,8 @@ const _sfc_main$26 = {
     return {
       currentValue: dayjs(value),
       mode: this.type,
-      selectList: []
+      selectList: [],
+      allowList: []
     };
   },
   watch: {
@@ -7156,6 +7170,22 @@ const _sfc_main$26 = {
     },
     type(val) {
       this.mode = val;
+    },
+    defaultList: {
+      handler(val) {
+        if (this.multiple) {
+          console.log("watch", this.selectList);
+        }
+      },
+      immediate: true
+    },
+    activeList: {
+      handler(val) {
+        if (this.multiple) {
+          this.allowList = [...val];
+        }
+      },
+      immediate: true
     }
   },
   computed: {
@@ -7180,7 +7210,7 @@ const _sfc_main$26 = {
         prevDate = dayjs(firstDate).subtract(1, "year");
       }
       this.handleChangeDate(prevDate);
-      this.$emit("on-prev");
+      this.$emit("on-prev", prevDate.format("YYYY"));
     },
     handleNext() {
       const firstDate = this.currentValue.format("YYYY-MM-01");
@@ -7191,7 +7221,7 @@ const _sfc_main$26 = {
         nextDate = dayjs(firstDate).add(1, "year");
       }
       this.handleChangeDate(nextDate);
-      this.$emit("on-next");
+      this.$emit("on-next", nextDate.format("YYYY"));
     },
     handleToday() {
       const nowDate = dayjs(new Date());
@@ -7203,10 +7233,10 @@ const _sfc_main$26 = {
       this.$emit("on-today");
     },
     handleChangeDate(val) {
+      this.currentValue = val;
       if (this.multiple) {
         this.$emit("on-select", this.selectList);
       } else {
-        this.currentValue = val;
         const date3 = new Date(val.format("YYYY-MM-DD"));
         this.$emit("update:modelValue", date3);
         this.$emit("on-change", date3);
