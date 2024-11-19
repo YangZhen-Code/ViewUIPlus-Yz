@@ -257,7 +257,12 @@
             hideNotFound: {
                 type: Boolean,
                 default: false
+            },
+            isTreeSelect: {
+                type: Boolean,
+                default:false
             }
+
         },
         mounted () {
             // set the initial values if there are any
@@ -434,7 +439,7 @@
             },
             getInitialValue(){
                 const {multiple, remote, modelValue} = this;
-                let initialValue = Array.isArray(modelValue) ? modelValue : [modelValue];
+                let initialValue = Array.isArray(modelValue) ? modelValue : (multiple&&modelValue)?modelValue.split(','):[modelValue];
                 if (!multiple && (typeof initialValue[0] === 'undefined' || (String(initialValue[0]).trim() === '' && !Number.isFinite(initialValue[0])))) initialValue = [];
                 if (remote && !multiple && modelValue) {
                     const data = this.getOptionData(modelValue);
@@ -713,13 +718,23 @@
             }
         },
         watch: {
-            modelValue (value) {
+            modelValue(value) {
+                let newValue = value
+                // console.log('watch',value);
+                if (this.multiple && typeof value === 'string') {
+                    if (value) {
+                        newValue = value.split(',')
+                    } else {
+                        newValue = []
+                    }
+                }
+                // console.log(newValue);
                 const { publicValue, values } = this;
                 this.checkUpdateStatus();
-                if (value === '') {
+                if (newValue === '') {
                     this.values = [];
                     this.query = '';
-                } else if (checkValuesNotEqual(value,publicValue,values)) {
+                } else if (checkValuesNotEqual(newValue,publicValue,values)) {
                     this.lazyUpdateValue();
                     if (!this.multiple) this.handleFormItemChange('change', this.publicValue);
                 }
@@ -727,6 +742,7 @@
             values (now, before) {
                 const newValue = JSON.stringify(now);
                 const oldValue = JSON.stringify(before);
+                // console.log('values',newValue,oldValue);
                 // v-model is always just the value, event with labelInValue === true
                 // const vModelValue = (this.publicValue && this.labelInValue === false) ?
                 //     (this.multiple ? this.publicValue.map(({value}) => value) : this.publicValue.value) :
@@ -747,7 +763,12 @@
                     // Form 重置时，如果初始值是 null，也置为 null，而不是 []
                     if (Array.isArray(vModelValue) && !vModelValue.length && this.modelValue === null) vModelValue = null;
                     else if (vModelValue === undefined && this.modelValue === null) vModelValue = null;
-
+                    // console.log(typeof this.modelValue);
+                    if (typeof this.modelValue === 'string' && this.multiple && !this.isTreeSelect) {
+                        vModelValue = vModelValue.join(',')
+                        emitValue = emitValue.join(',')
+                    }
+                    // console.log('vmodel', vModelValue, emitValue);
                     this.$emit('update:modelValue', vModelValue); // to update v-model
                     this.$emit('on-change', emitValue);
                     this.handleFormItemChange('change', emitValue);

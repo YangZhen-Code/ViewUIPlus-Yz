@@ -3472,6 +3472,10 @@ const _sfc_main$2n = {
     hideNotFound: {
       type: Boolean,
       default: false
+    },
+    isTreeSelect: {
+      type: Boolean,
+      default: false
     }
   },
   mounted() {
@@ -3646,7 +3650,7 @@ const _sfc_main$2n = {
     },
     getInitialValue() {
       const { multiple, remote, modelValue } = this;
-      let initialValue = Array.isArray(modelValue) ? modelValue : [modelValue];
+      let initialValue = Array.isArray(modelValue) ? modelValue : multiple && modelValue ? modelValue.split(",") : [modelValue];
       if (!multiple && (typeof initialValue[0] === "undefined" || String(initialValue[0]).trim() === "" && !Number.isFinite(initialValue[0])))
         initialValue = [];
       if (remote && !multiple && modelValue) {
@@ -3910,12 +3914,20 @@ const _sfc_main$2n = {
   },
   watch: {
     modelValue(value) {
+      let newValue = value;
+      if (this.multiple && typeof value === "string") {
+        if (value) {
+          newValue = value.split(",");
+        } else {
+          newValue = [];
+        }
+      }
       const { publicValue, values } = this;
       this.checkUpdateStatus();
-      if (value === "") {
+      if (newValue === "") {
         this.values = [];
         this.query = "";
-      } else if (checkValuesNotEqual(value, publicValue, values)) {
+      } else if (checkValuesNotEqual(newValue, publicValue, values)) {
         this.lazyUpdateValue();
         if (!this.multiple)
           this.handleFormItemChange("change", this.publicValue);
@@ -3939,6 +3951,10 @@ const _sfc_main$2n = {
           vModelValue = null;
         else if (vModelValue === void 0 && this.modelValue === null)
           vModelValue = null;
+        if (typeof this.modelValue === "string" && this.multiple && !this.isTreeSelect) {
+          vModelValue = vModelValue.join(",");
+          emitValue = emitValue.join(",");
+        }
         this.$emit("update:modelValue", vModelValue);
         this.$emit("on-change", emitValue);
         this.handleFormItemChange("change", emitValue);
@@ -35750,8 +35766,16 @@ const _sfc_main$i = {
       if (array3.length) {
         const colLen = array3[0].length;
         array3.forEach((item, index2) => {
-          if (item.length !== colLen)
+          if (item.length > colLen) {
             errorIndex.push(index2);
+          } else if (item.length < colLen) {
+            let len = colLen - item.length;
+            let lenStart = item.length - 1;
+            for (let i = 1; i <= len; i++) {
+              item[lenStart + i] = "";
+            }
+            rows[index2] = item;
+          }
         });
       }
       return errorIndex;

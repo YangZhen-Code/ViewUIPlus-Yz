@@ -2,11 +2,12 @@
     <div>
         <Button @click="handleSetValue">set value</Button>
         <Button @click="addCityList">set value again</Button>
-        <Select v-model="model" style="width:200px">
+        <Select v-model="model" style="width:200px" multiple>
             <template v-if="showOption">
                 <Option v-for="item in cityList" :value="item.value" :key="item.value">{{ item.label }}</Option>
             </template>
         </Select>
+        {{ model }}
     </div>
 </template>
 <script>
